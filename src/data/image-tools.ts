@@ -1,0 +1,220 @@
+// image-tools.ts
+// AI 이미지 생성 모델 데이터 (2026년 6월 기준 리서치).
+// 사용법: src/data/ 에 넣고, tools.ts 에서 아래처럼 합친다.
+//   import { imageTools } from "./image-tools";
+//   export const tools: Tool[] = [...imageTools, /* ...영상, 3D 등 */];
+//
+// 가격/버전은 빠르게 바뀌므로 priceNote에 "2026 기준"을 적어둠. 공식 페이지로 검증 권장.
+
+import type { Tool } from "./tools";
+
+export const imageTools: Tool[] = [
+  {
+    slug: "nano-banana-pro",
+    name: "Nano Banana Pro",
+    tagline: "구글 제미나이 기반, 텍스트·사실성 최상위 모델",
+    description:
+      "구글 Gemini 3 Pro로 만든 이미지 생성·편집 모델. 장면을 '생각'하고 그리는 방식이라 프롬프트를 정확히 따르고, 다국어 텍스트 렌더링(한국어 포함)과 4K 출력, 인물 일관성에서 현재 최상위로 평가받는다. 기본 생성은 제미나이 무료 티어로 가능하고, Pro 기능은 유료 구독에서 풀린다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "기본 무료 / 풀 기능 Google One AI 약 $19.99·월 (2026 기준)",
+    strengths: ["정확한 텍스트 렌더링", "한국어 등 다국어 지원", "4K 고해상도", "인물·캐릭터 일관성"],
+    useCases: ["문구가 들어간 포스터·썸네일", "사실적인 제품 이미지", "인포그래픽", "캐릭터 시리즈"],
+    tips: [
+      "공식 공식: 주제 + 행동 + 배경 순으로 프롬프트를 쓰면 적중률이 올라간다.",
+      "사실적인 결과를 원하면 렌즈(35mm 등)·조명·'photorealistic' 같은 트리거를 넣는다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/nanobananapro/800/500",
+    gallery: [
+      "https://picsum.photos/seed/nbp1/800/600",
+      "https://picsum.photos/seed/nbp2/800/600",
+    ],
+    officialUrl: "https://gemini.google.com/",
+    addedAt: "2026-05-20",
+    featured: true,
+  },
+  {
+    slug: "gpt-image-2",
+    name: "GPT Image 2 (ChatGPT Images 2.0)",
+    tagline: "대화로 다듬는, 추론 기능이 들어간 OpenAI 이미지 모델",
+    description:
+      "OpenAI가 2026년 4월 공개한 이미지 모델로, DALL·E 3를 대체했다. 처음으로 '생각(thinking)' 기능이 들어가 복잡한 지시를 정확히 따르고, 대화하듯 여러 번 수정해도 대상이 흐트러지지 않는다. 한 프롬프트로 최대 8장까지 일관된 이미지를 만들고, 한국어 등 비라틴 문자 렌더링도 향상됐다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "ChatGPT 무료 티어 일부 / Plus $20·월, Pro $200·월 (2026 기준)",
+    strengths: ["대화형 반복 편집", "정확한 지시 수행", "텍스트·다국어 렌더링", "한 번에 다중 이미지"],
+    useCases: ["클라이언트 피드백 반영 수정", "여러 컷 광고 시안", "복잡한 레이아웃 이미지", "아이디어 빠른 시각화"],
+    tips: [
+      "고치고 싶은 부분만 콕 집어 말하면 나머지는 유지한 채 수정해준다.",
+      "Thinking 모드(유료)는 웹 검색·레이아웃 추론까지 해서 정보성 이미지에 강하다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/gptimage2/800/500",
+    officialUrl: "https://chatgpt.com/",
+    addedAt: "2026-04-21",
+    featured: true,
+  },
+  {
+    slug: "midjourney",
+    name: "Midjourney",
+    tagline: "예술적·시네마틱 비주얼의 사실상 표준",
+    description:
+      "회화적이고 영화 같은 분위기의 이미지에서 여전히 최강으로 꼽히는 모델. 2026년 기준 최신은 V8.1로, 생성 속도·디테일·HD 2K가 개선됐다. 무료 플랜은 없고 전부 유료이며, 클라이언트 작업이라면 작업물을 공개 갤러리에서 숨기는 Stealth 모드(Pro 이상)가 필요하다.",
+    categories: ["image"],
+    pricing: "paid",
+    priceNote: "Basic $10 / Standard $30 / Pro $60 / Mega $120·월, 연결제 20% 할인 (2026 기준)",
+    strengths: ["압도적인 아트·분위기 표현", "사실적인 인물·손 표현 개선", "이미지→영상 변환", "거대한 레퍼런스 커뮤니티"],
+    useCases: ["무드보드·콘셉트 아트", "히어로 비주얼", "앨범·포스터 아트워크", "스타일 탐색"],
+    tips: [
+      "대부분의 사용자에겐 Standard($30) 무제한 Relax 모드가 가성비 스윗스폿이다.",
+      "프롬프트 끝에 분위기·조명·화풍 키워드를 쌓으면 미드저니 특유의 톤이 살아난다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/midjourney/800/500",
+    gallery: [
+      "https://picsum.photos/seed/mj1/800/600",
+      "https://picsum.photos/seed/mj2/800/600",
+    ],
+    officialUrl: "https://www.midjourney.com/",
+    addedAt: "2026-04-30",
+    featured: true,
+  },
+  {
+    slug: "flux-2",
+    name: "FLUX.2",
+    tagline: "프로덕션 우선, 통제력이 강한 오픈웨이트 계열 모델",
+    description:
+      "Stability AI 출신들이 만든 Black Forest Labs의 모델. '느낌'보다 재현성과 정밀한 통제를 우선해 상업 프로덕션에 강하다. 빠른 Klein, 균형형 Dev/Flex, 최고 품질 Pro 등 용도별 변형이 있고, 여러 레퍼런스 이미지로 브랜드 일관성을 맞추는 멀티 레퍼런스가 특징. 일부 버전은 직접 설치(로컬)도 가능하다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "API 종량제(1크레딧=$0.01, 해상도별 과금) / 무료 체험 제공 (2026 기준)",
+    strengths: ["정밀한 통제·재현성", "멀티 레퍼런스로 브랜드 정렬", "4MP 고해상도", "로컬 설치 가능 변형"],
+    useCases: ["캠페인 키비주얼", "인쇄·패키지용 이미지", "브랜드 일관 에셋 대량 생성", "자체 파인튜닝"],
+    tips: [
+      "탐색은 가벼운 Klein/Dev로, 최종 납품물만 Pro로 뽑으면 비용이 절약된다.",
+      "여러 참고 이미지를 함께 넣어 스타일·색감을 고정하는 워크플로에 강하다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/flux2/800/500",
+    officialUrl: "https://bfl.ai/",
+    addedAt: "2026-01-15",
+    featured: false,
+  },
+  {
+    slug: "adobe-firefly",
+    name: "Adobe Firefly",
+    tagline: "상업적으로 안전한, 크리에이티브 클라우드 통합 도구",
+    description:
+      "라이선스·퍼블릭 도메인 데이터로만 학습해 '상업적으로 안전한' 이미지를 표방하는 어도비의 생성 도구. 포토샵·일러스트레이터·익스프레스와 깊게 통합되고 생성형 채우기(Generative Fill) 등 실무 편집에 강하다. 최신 자체 모델은 Image Model 5이며, 한 화면에서 Nano Banana·Flux·Imagen·GPT Image 등 파트너 모델도 골라 쓸 수 있다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "무료(월 25크레딧) / Standard $9.99 ~ Premium $199.99·월 (2026 기준)",
+    strengths: ["상업적 사용 안전(IP 보호)", "포토샵·일러스트 통합", "생성형 채우기·확장 편집", "파트너 모델 한곳에서 사용"],
+    useCases: ["브랜드·기업 마케팅 비주얼", "사진 합성·배경 교체", "텍스트 이펙트", "인쇄용 고해상 출력"],
+    tips: [
+      "기존 어도비 사용자라면 포토샵 안에서 바로 쓰는 게 가장 효율적이다.",
+      "크레딧 차감은 기능·해상도별로 다르니 생성 전 표시되는 비용을 확인한다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/firefly/800/500",
+    officialUrl: "https://firefly.adobe.com/",
+    addedAt: "2026-02-01",
+    featured: false,
+  },
+  {
+    slug: "ideogram-3",
+    name: "Ideogram 3",
+    tagline: "이미지 속 글자(타이포)가 필요할 때 1순위",
+    description:
+      "이미지 안에 들어가는 텍스트를 정확하게 렌더링하는 데 특화된 모델. 로고, 태그라인이 들어간 광고, 소셜 카드처럼 '글자가 핵심'인 작업에서 강점을 보인다. 무료로 매일 일정량을 생성할 수 있어 진입 장벽도 낮다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "무료 일일 생성 제공 / 유료 플랜 별도 (2026 기준)",
+    strengths: ["정확한 텍스트 렌더링", "로고·타이포 디자인", "광고·소셜 카드", "무료 데일리 생성"],
+    useCases: ["문구 들어간 포스터", "로고 시안", "광고 배너", "타이포그래픽 비주얼"],
+    tips: [
+      "넣고 싶은 문구를 따옴표로 명확히 지정하면 글자 정확도가 올라간다.",
+      "사실적 사진보다 그래픽·디자인 톤에서 더 강하다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/ideogram3/800/500",
+    officialUrl: "https://ideogram.ai/",
+    addedAt: "2026-03-10",
+    featured: false,
+  },
+  {
+    slug: "leonardo-ai",
+    name: "Leonardo AI",
+    tagline: "게임·콘셉트 아트와 일관된 캐릭터에 강한 플랫폼",
+    description:
+      "직관적인 웹 UI와 강한 이미지 통제력으로 게임 개발자·콘셉트 아티스트에게 인기 있는 플랫폼. 커스텀 모델 학습, 일관된 캐릭터, 3D 텍스처 도구를 제공하고, 그리면서 실시간으로 결과가 갱신되는 Realtime Canvas가 특징. 무료 티어(하루 150토큰)가 넉넉하다.",
+    categories: ["image", "3d"],
+    pricing: "freemium",
+    priceNote: "무료(하루 150토큰) / 유료 $12 ~ $60·월 (2026 기준)",
+    strengths: ["일관된 캐릭터·스타일", "커스텀 모델 학습", "3D 텍스처·게임 에셋", "Realtime Canvas"],
+    useCases: ["게임 캐릭터·콘셉트 아트", "브랜드 스타일 고정 배치", "제품 목업", "반복 디자인 작업"],
+    tips: [
+      "스타일을 일정하게 유지해 '대량'으로 뽑을 때 가장 빛난다.",
+      "단발 히어로 이미지 품질만 보면 미드저니가 앞서니 용도에 맞게 선택한다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/leonardo/800/500",
+    officialUrl: "https://leonardo.ai/",
+    addedAt: "2026-03-12",
+    featured: false,
+  },
+  {
+    slug: "recraft",
+    name: "Recraft",
+    tagline: "벡터·로고·브랜드 그래픽에 특화된 디자이너용 도구",
+    description:
+      "벡터 아트, 일러스트, 로고, 아이콘 같은 그래픽 디자인 요소 제작에 특화된 도구. SVG 벡터로 바로 내보낼 수 있고 브랜드 스타일 일관성 기능이 강해, 온브랜드 콘텐츠를 대량으로 만드는 디자인·마케팅 팀에 잘 맞는다. 무료로 하루 50크레딧을 준다.",
+    categories: ["image", "uiux"],
+    pricing: "freemium",
+    priceNote: "무료(하루 50크레딧) / 유료 $10 ~ $25·월 (2026 기준)",
+    strengths: ["네이티브 SVG 벡터 출력", "브랜드 일관성 도구", "로고·아이콘·일러스트", "깔끔한 디자인 톤"],
+    useCases: ["로고·아이콘 세트", "벡터 일러스트", "브랜드 그래픽 요소", "UI용 일러스트"],
+    tips: [
+      "사진 사실성보다 디자인·벡터 작업에서 강하니 용도를 구분해 쓴다.",
+      "스타일을 지정해 두면 동일 톤의 그래픽을 연속으로 뽑기 좋다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/recraft/800/500",
+    officialUrl: "https://www.recraft.ai/",
+    addedAt: "2026-02-03",
+    featured: false,
+  },
+  {
+    slug: "krea-ai",
+    name: "Krea AI",
+    tagline: "그리면 실시간으로 완성되는 캔버스 + 모델 통합 플랫폼",
+    description:
+      "스케치나 드로잉을 하면 AI가 실시간으로 정교한 비주얼로 바꿔주는 Realtime Canvas가 핵심인 플랫폼. Flux·Ideogram 등 60종이 넘는 모델을 한곳에서 쓰고 이미지·영상·3D·업스케일까지 아우른다. 말보다 시각으로 사고하는 디자이너·아티스트에게 잘 맞고 무료 티어(하루 100 컴퓨트 유닛)도 있다.",
+    categories: ["image", "video"],
+    pricing: "freemium",
+    priceNote: "무료(하루 100 유닛) / 유료 약 $9·월~ (2026 기준)",
+    strengths: ["실시간 캔버스(드로잉→이미지)", "60종+ 모델 한곳에서", "빠른 콘셉트 탐색", "영상·3D·업스케일 통합"],
+    useCases: ["빠른 아이디어 스케치", "스타일 탐색·이터레이션", "건축·인테리어 렌더 변환", "한 워크스페이스 멀티미디어"],
+    tips: [
+      "프롬프트 엔지니어링보다 직접 그리며 조정하는 시각적 작업에 강하다.",
+      "여러 모델을 바로 바꿔가며 비교할 수 있어 어떤 모델이 맞는지 테스트하기 좋다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/krea/800/500",
+    officialUrl: "https://www.krea.ai/",
+    addedAt: "2026-02-15",
+    featured: false,
+  },
+  {
+    slug: "imagen-4",
+    name: "Imagen 4",
+    tagline: "빠르고 저렴한 구글의 전용 이미지 모델",
+    description:
+      "제미나이와 별개인 구글의 전용 이미지 생성 모델. 최고 품질과 텍스트 렌더링·사실성에 최적화돼 있으면서도 API 단가가 매우 낮아(특히 Imagen 4 Fast) 대량 생성과 빠른 콘셉트 테스트에 유리하다. 주로 Google AI Studio/API로 접근한다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "API 종량제 약 $0.02 ~ $0.06·장 / AI Studio 무료 티어 (2026 기준)",
+    strengths: ["저렴한 장당 단가", "빠른 생성 속도", "좋은 텍스트 렌더링", "대량 배치에 적합"],
+    useCases: ["대량 마케팅 이미지", "빠른 콘셉트 테스트", "빠른 회전 콘텐츠", "API 자동화 파이프라인"],
+    tips: [
+      "단순 이미지 대량 생성이면 Fast 버전이 가장 저렴한 선택지 중 하나다.",
+      "텍스트 이해+이미지 출력을 한 모델에서 원하면 Nano Banana 계열이 더 맞는다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/imagen4/800/500",
+    officialUrl: "https://deepmind.google/models/imagen/",
+    addedAt: "2026-01-20",
+    featured: false,
+  },
+];

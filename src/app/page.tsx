@@ -26,7 +26,7 @@ export default function Home() {
   );
 
   const recent = all.slice(0, 8);
-  const featured = getFeatured();
+  const featured = getFeatured().slice(0, 3);
 
   return (
     <>

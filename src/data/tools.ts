@@ -1,3 +1,5 @@
+import { imageTools } from "./image-tools";
+
 export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
 export type Pricing = "free" | "freemium" | "paid";
 
@@ -28,65 +30,10 @@ const gal = (seed: string) => [
   `https://picsum.photos/seed/${seed}-3/1200/800`,
 ];
 
-export const tools: Tool[] = [
-  // ---------------------------------------------------------------- IMAGE
-  {
-    slug: "midjourney",
-    name: "Midjourney",
-    tagline: "텍스트 한 줄로 완성도 높은 이미지를",
-    description:
-      "독보적인 미적 감각으로 유명한 이미지 생성 모델. 짧은 프롬프트만으로도 조명, 질감, 분위기가 살아 있는 결과물을 만들어 내며, 컨셉 아트와 무드보드 작업에서 사실상 표준처럼 쓰인다. 디스코드와 웹 에디터 양쪽에서 사용할 수 있다.",
-    categories: ["image", "tips"],
-    pricing: "paid",
-    priceNote: "월 $10부터, 무료 체험 없음",
-    strengths: [
-      "압도적인 기본 미감과 라이팅",
-      "스타일 레퍼런스(--sref)로 톤 고정",
-      "활발한 커뮤니티와 프롬프트 자료",
-    ],
-    useCases: [
-      "컨셉 아트 / 키비주얼",
-      "브랜드 무드보드",
-      "썸네일·포스터 시안",
-    ],
-    tips: [
-      "--ar 로 비율을, --stylize 로 미감 강도를 조절한다.",
-      "--sref 에 이미지 URL을 넣어 여러 컷의 톤을 통일한다.",
-      "프롬프트는 문장보다 핵심 키워드 나열이 더 잘 먹힌다.",
-    ],
-    thumbnail: img("midjourney"),
-    gallery: gal("midjourney"),
-    officialUrl: "https://www.midjourney.com",
-    addedAt: "2025-11-12",
-    featured: true,
-  },
-  {
-    slug: "dall-e-3",
-    name: "DALL·E 3",
-    tagline: "ChatGPT와 함께 쓰는 대화형 이미지 생성",
-    description:
-      "OpenAI의 이미지 생성 모델로 ChatGPT 안에서 자연어 대화로 이미지를 다듬어 나갈 수 있다. 프롬프트 해석력이 뛰어나 글자·표지판 같은 텍스트 렌더링과 복잡한 지시 이행에 강하다.",
-    categories: ["image"],
-    pricing: "freemium",
-    priceNote: "ChatGPT Plus($20/월)에 포함",
-    strengths: [
-      "긴 자연어 프롬프트 이해도",
-      "이미지 내 텍스트 렌더링",
-      "대화로 즉시 수정",
-    ],
-    useCases: [
-      "블로그·아티클 삽화",
-      "아이디어 빠른 시각화",
-      "동화·스토리보드",
-    ],
-    tips: [
-      "원하는 변경만 짚어 '이 부분만 바꿔줘'라고 이어 말하면 된다.",
-    ],
-    thumbnail: img("dalle3"),
-    gallery: gal("dalle3"),
-    officialUrl: "https://openai.com/dall-e-3",
-    addedAt: "2025-09-30",
-  },
+// 이미지 카테고리는 image-tools.ts 의 imageTools 가 담당.
+// 여기 남은 stable-diffusion 은 오픈소스 대표 + tips 카테고리 유지용.
+const otherTools: Tool[] = [
+  // -------------------------------------------------- IMAGE (오픈소스 보강)
   {
     slug: "stable-diffusion",
     name: "Stable Diffusion",
@@ -115,31 +62,6 @@ export const tools: Tool[] = [
     officialUrl: "https://stability.ai",
     addedAt: "2025-08-21",
   },
-  {
-    slug: "adobe-firefly",
-    name: "Adobe Firefly",
-    tagline: "저작권 안전한 상업용 생성",
-    description:
-      "어도비가 라이선스를 확보한 데이터로 학습한 상업적 사용에 안전한 모델. 포토샵의 생성형 채우기와 연동되어 기존 디자인 워크플로 안에서 자연스럽게 쓰인다.",
-    categories: ["image", "render"],
-    pricing: "freemium",
-    priceNote: "월 크레딧 무료, Creative Cloud 연동",
-    strengths: [
-      "상업적 사용 라이선스 명확",
-      "포토샵 생성형 채우기 통합",
-      "텍스트 효과·벡터 생성",
-    ],
-    useCases: [
-      "기존 이미지 확장·합성",
-      "광고 소재 변형",
-      "안전한 상업 프로젝트",
-    ],
-    thumbnail: img("firefly"),
-    gallery: gal("firefly"),
-    officialUrl: "https://www.adobe.com/products/firefly.html",
-    addedAt: "2025-10-05",
-  },
-
   // ---------------------------------------------------------------- VIDEO
   {
     slug: "runway-gen-3",
@@ -423,28 +345,7 @@ export const tools: Tool[] = [
     officialUrl: "https://magnific.ai",
     addedAt: "2025-10-30",
   },
-  {
-    slug: "krea-ai",
-    name: "Krea AI",
-    tagline: "실시간 생성·업스케일 캔버스",
-    description:
-      "그리는 즉시 결과가 갱신되는 실시간 생성 캔버스가 특징인 도구. 러프 스케치를 실시간으로 완성도 높은 렌더로 바꾸고, 영상 업스케일과 인핸스까지 한곳에서 처리한다.",
-    categories: ["render", "image"],
-    pricing: "freemium",
-    priceNote: "무료 플랜 제공",
-    strengths: [
-      "실시간 스케치→렌더",
-      "이미지·영상 업스케일 통합",
-      "직관적인 캔버스 UX",
-    ],
-    useCases: [
-      "라이브 컨셉 드로잉",
-      "빠른 렌더 탐색",
-      "영상 화질 개선",
-    ],
-    thumbnail: img("krea"),
-    gallery: gal("krea"),
-    officialUrl: "https://www.krea.ai",
-    addedAt: "2025-09-02",
-  },
 ];
+
+// 이미지 모델(최신 리서치) + 나머지 카테고리 합본.
+export const tools: Tool[] = [...imageTools, ...otherTools];
