@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { DUR, EASE, STAGGER } from "@/lib/motion";
 
-const LINES = ["누구나", "같은 출발선에서"];
+const LINES = ["AI 아카이브"];
 
 export default function Hero() {
   const reduce = useReducedMotion();
