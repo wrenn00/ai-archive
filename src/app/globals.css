@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ---- Tailwind theme registration (Tailwind v4 CSS-based config) ---- */
 
+/* Colors map to live CSS vars so the .dark class toggle works at runtime. */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-dim: var(--text-dim);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Fonts: plain @theme so --font-display / --font-body are exposed on :root
+   and generate the `font-display` / `font-body` utilities. */
+@theme {
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-hanken), "Pretendard", system-ui, sans-serif;
+}
+
+/* ---- Design tokens ---- */
+
+/* Light (default, no .dark class on <html>) */
+:root {
+  --bg: #f4f2ec;
+  --surface: #ffffff;
+  --text: #0e0e0e;
+  --text-dim: #5a5852;
+  --border: #dad7cc;
+  --accent: #c7ff3a;
+}
+
+/* Dark (html.dark) */
+html.dark {
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --text: #f4f2ec;
+  --text-dim: #9a988f;
+  --border: #2a2a2a;
+  --accent: #c7ff3a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+/* Hide native cursor when the custom cursor is active. */
+html.custom-cursor,
+html.custom-cursor * {
+  cursor: none;
 }
