@@ -19,5 +19,10 @@ export const STAGGER = 0.08;
 /** reveal 시 기본 y 오프셋(px) */
 export const REVEAL_Y = 24;
 
-/** whileInView 공통 옵션 */
-export const VIEWPORT = { once: true, margin: "-80px" } as const;
+/**
+ * whileInView 공통 옵션.
+ * 음수 rootMargin("-80px")은 '뷰포트 안쪽 80px'을 넘어야 발동돼서,
+ * 첫 페인트에 이미 보이는(특히 화면 가장자리에 걸친) 요소가 안 켜지는
+ * 원인이 된다. amount 기반으로 바꿔 마운트 시 보이는 요소는 즉시 발동한다.
+ */
+export const VIEWPORT = { once: true, amount: 0.15 } as const;
