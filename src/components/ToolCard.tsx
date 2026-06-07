@@ -29,15 +29,20 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
         delay: Math.min(index * STAGGER, 0.4),
         ease: EASE,
       }}
-      className={clsx(featured && "sm:col-span-2")}
+      className="h-full"
     >
       <Link
         href={`/tool/${slug}`}
         data-cursor="hover"
         className="group flex h-full flex-col"
       >
-        {/* Thumbnail 16:10 */}
-        <div className="relative aspect-[16/10] overflow-hidden rounded-[3px] border border-border bg-surface">
+        {/* Thumbnail — 전 카드 동일 비율(4:3), cover 로 잘라 높이 통일 */}
+        <div
+          className={clsx(
+            "relative aspect-[4/3] overflow-hidden rounded-[3px] border bg-surface",
+            featured ? "border-text-dim/40" : "border-border",
+          )}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={thumbnail}
@@ -47,38 +52,34 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
           />
 
           {/* Hover overlay — 절제된 모노톤 */}
-          <div className="absolute inset-0 flex items-end bg-bg/0 p-4 opacity-0 transition-opacity duration-500 group-hover:bg-bg/10 group-hover:opacity-100">
+          <div className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-500 group-hover:bg-bg/10 group-hover:opacity-100">
             <span className="font-body text-xs text-text">자세히 보기 →</span>
           </div>
 
           {featured && (
-            <span className="absolute left-3 top-3 bg-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-[#0d0d0c]">
+            <span className="absolute left-3 top-3 bg-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-[#0e0e0e]">
               Featured
             </span>
           )}
         </div>
 
-        {/* Body */}
-        <div className="flex flex-1 flex-col gap-3 pt-5">
-          <div className="flex flex-col gap-1.5">
-            <h3
-              className={clsx(
-                "font-display font-medium leading-tight tracking-tight text-text transition-colors",
-                featured ? "text-2xl" : "text-lg",
-              )}
-            >
-              {name}
-            </h3>
-            <p className="font-body text-sm leading-relaxed text-text-dim">
-              {tagline}
-            </p>
-          </div>
+        {/* Body — flex column, 메타 줄은 항상 카드 하단에 정렬 */}
+        <div className="flex flex-1 flex-col pt-5">
+          <h3 className="line-clamp-2 font-display text-lg font-medium leading-tight tracking-tight text-text">
+            {name}
+          </h3>
+          <p className="mt-2 line-clamp-1 font-body text-sm leading-relaxed text-text-dim">
+            {tagline}
+          </p>
 
-          <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
-            {categories.map((c) => (
-              <CategoryTag key={c} category={c} />
-            ))}
-            <PriceBadge pricing={pricing} className="ml-auto" />
+          {/* 메타: 카테고리(왼쪽) / 가격(오른쪽 끝) 한 줄 */}
+          <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+            <div className="flex flex-wrap items-center gap-1.5">
+              {categories.map((c) => (
+                <CategoryTag key={c} category={c} />
+              ))}
+            </div>
+            <PriceBadge pricing={pricing} className="shrink-0" />
           </div>
         </div>
       </Link>
