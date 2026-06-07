@@ -44,18 +44,18 @@ export default async function ArchivePage({
   const results = filterTools({ categories, pricing, query: q, sort });
 
   return (
-    <main className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-12">
+    <main className="mx-auto w-full max-w-7xl px-6 py-16 sm:px-12 lg:px-20 lg:py-24">
       <SectionHeading
-        label="Archive"
-        title="전체 아카이브"
-        aside="분야와 가격으로 좁혀 원하는 도구를 찾아보세요."
-        className="mb-8"
+        en="Archive"
+        ko="분야별 AI 디자인 툴 모음"
+        className="mb-10"
       />
 
       <FilterBar {...state} />
 
-      <p className="py-6 font-mono text-sm text-text-dim">
-        <span className="text-text">{results.length}</span>개의 툴
+      <p className="py-8 font-mono text-xs uppercase tracking-widest text-text-dim">
+        <span className="text-text">{String(results.length).padStart(2, "0")}</span>{" "}
+        Tools
       </p>
 
       <ResultsGrid tools={results} />

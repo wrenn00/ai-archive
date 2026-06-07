@@ -57,7 +57,7 @@ export default function FilterBar(state: FilterState) {
     !!state.q;
 
   return (
-    <div className="sticky top-20 z-40 -mx-6 border-b border-border bg-[color-mix(in_srgb,var(--bg)_80%,transparent)] px-6 py-4 backdrop-blur-md sm:-mx-12 sm:px-12">
+    <div className="sticky top-20 z-40 -mx-6 border-b border-border bg-[color-mix(in_srgb,var(--bg)_82%,transparent)] px-6 py-5 backdrop-blur-md sm:-mx-12 sm:px-12 lg:-mx-20 lg:px-20">
       <div className="flex flex-col gap-4">
         {/* 분야 멀티 선택 */}
         <div className="flex flex-wrap items-center gap-2">
@@ -70,10 +70,10 @@ export default function FilterBar(state: FilterState) {
                 onClick={() => toggleCategory(value)}
                 data-cursor="hover"
                 className={clsx(
-                  "rounded-full border px-3.5 py-1.5 font-body text-sm transition-colors",
+                  "rounded-[2px] border px-3 py-1 font-body text-sm transition-colors",
                   active
-                    ? "border-accent bg-accent text-bg"
-                    : "border-border text-text-dim hover:border-accent hover:text-accent",
+                    ? "border-text bg-text text-bg"
+                    : "border-border text-text-dim hover:border-text-dim hover:text-text",
                 )}
               >
                 {label}
@@ -132,14 +132,14 @@ export default function FilterBar(state: FilterState) {
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="툴 검색…"
-              className="w-full rounded-full border border-border bg-surface px-4 py-2 font-body text-sm text-text placeholder:text-text-dim focus:border-accent focus:outline-none sm:w-64"
+              className="w-full rounded-[2px] border border-border bg-transparent px-4 py-2 font-body text-sm text-text placeholder:text-text-dim focus:border-text focus:outline-none sm:w-64"
             />
             {hasFilters && (
               <button
                 type="button"
                 onClick={() => router.push("/archive", { scroll: false })}
                 data-cursor="hover"
-                className="shrink-0 font-body text-sm text-text-dim transition-colors hover:text-accent"
+                className="shrink-0 font-body text-sm text-text-dim transition-colors hover:text-text"
               >
                 초기화
               </button>
@@ -166,10 +166,8 @@ function PillButton({
       onClick={onClick}
       data-cursor="hover"
       className={clsx(
-        "rounded-full px-3 py-1.5 font-body text-sm transition-colors",
-        active
-          ? "bg-text text-bg"
-          : "text-text-dim hover:text-text",
+        "rounded-[2px] px-3 py-1 font-body text-sm transition-colors",
+        active ? "bg-text text-bg" : "text-text-dim hover:text-text",
       )}
     >
       {children}

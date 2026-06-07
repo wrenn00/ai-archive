@@ -34,52 +34,47 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
       <Link
         href={`/tool/${slug}`}
         data-cursor="hover"
-        className={clsx(
-          "group flex h-full flex-col overflow-hidden rounded-2xl border bg-surface transition-colors",
-          featured
-            ? "border-accent/40 hover:border-accent/70"
-            : "border-border hover:border-text-dim",
-        )}
+        className="group flex h-full flex-col"
       >
         {/* Thumbnail 16:10 */}
-        <div className="relative aspect-[16/10] overflow-hidden">
+        <div className="relative aspect-[16/10] overflow-hidden rounded-[3px] border border-border bg-surface">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={thumbnail}
             alt={name}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
           />
 
-          {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-bg/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <span className="translate-y-3 font-mono text-sm uppercase tracking-[0.3em] text-accent opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-              VIEW
-            </span>
+          {/* Hover overlay — 절제된 모노톤 */}
+          <div className="absolute inset-0 flex items-end bg-bg/0 p-4 opacity-0 transition-opacity duration-500 group-hover:bg-bg/10 group-hover:opacity-100">
+            <span className="font-body text-xs text-text">자세히 보기 →</span>
           </div>
 
           {featured && (
-            <span className="absolute left-3 top-3 rounded-full bg-accent px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-bg">
+            <span className="absolute left-3 top-3 bg-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-[#0d0d0c]">
               Featured
             </span>
           )}
         </div>
 
         {/* Body */}
-        <div className="flex flex-1 flex-col gap-4 p-5">
+        <div className="flex flex-1 flex-col gap-3 pt-5">
           <div className="flex flex-col gap-1.5">
             <h3
               className={clsx(
-                "font-display font-bold leading-tight tracking-tight text-text",
-                featured ? "text-2xl" : "text-xl",
+                "font-display font-medium leading-tight tracking-tight text-text transition-colors",
+                featured ? "text-2xl" : "text-lg",
               )}
             >
               {name}
             </h3>
-            <p className="font-body text-sm text-text-dim">{tagline}</p>
+            <p className="font-body text-sm leading-relaxed text-text-dim">
+              {tagline}
+            </p>
           </div>
 
-          <div className="mt-auto flex flex-wrap items-center gap-2">
+          <div className="mt-auto flex flex-wrap items-center gap-2 pt-2">
             {categories.map((c) => (
               <CategoryTag key={c} category={c} />
             ))}

@@ -6,6 +6,7 @@ import EditorsPicks from "@/components/EditorsPicks";
 import ArchiveStats from "@/components/ArchiveStats";
 import AboutCTA from "@/components/AboutCTA";
 import Marquee from "@/components/Marquee";
+import TextLink from "@/components/TextLink";
 import Reveal from "@/components/Reveal";
 import { getAllTools, getFeatured, getCategoryCounts } from "@/lib/tools";
 import { categoryList } from "@/lib/labels";
@@ -32,65 +33,62 @@ export default function Home() {
     <>
       <Hero />
 
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-32 px-6 py-24 sm:px-12">
-        {/* 2. 카테고리 내비 */}
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-28 px-6 py-24 sm:gap-40 sm:px-12 lg:gap-[180px] lg:px-20 lg:py-32">
+        {/* 카테고리 내비 */}
         <section id="archive">
           <Reveal>
             <SectionHeading
-              label="Browse"
-              title="카테고리"
-              aside="분야별로 탐색하세요. 마우스를 올리면 미리보기가 나타납니다."
-              className="mb-12"
+              en="Categories"
+              ko="분야별로 둘러보기"
+              className="mb-14"
             />
           </Reveal>
           <CategoryNav items={categoryItems} />
         </section>
 
-        {/* 3. 최신 추가 */}
+        {/* 최신 추가 */}
         <section id="recent">
           <Reveal>
             <SectionHeading
-              label="Recently archived"
-              title="최신 추가"
-              aside="가장 최근에 아카이브에 더해진 도구들."
-              className="mb-12"
+              en="Recently Archived"
+              ko="가장 최근에 더해진 도구들"
+              action={<TextLink href="/archive">전체 보기</TextLink>}
+              className="mb-14"
             />
           </Reveal>
           <RecentTrack tools={recent} />
         </section>
 
-        {/* 4. 에디터스 픽 */}
+        {/* 에디터스 픽 */}
         <section id="showcase">
           <Reveal>
             <SectionHeading
-              label="Editor's picks"
-              title="에디터스 픽"
-              aside="지금 특히 주목할 만한 세 가지."
-              className="mb-12"
+              en="Featured"
+              ko="이번 주 추천 도구"
+              className="mb-14"
             />
           </Reveal>
           <EditorsPicks tools={featured} />
         </section>
 
-        {/* 5. 아카이브 통계 */}
+        {/* 아카이브 통계 */}
         <section id="stats">
           <Reveal>
             <SectionHeading
-              label="Numbers"
-              title="아카이브 현황"
-              aside="매주 업데이트되며 꾸준히 늘어납니다."
-              className="mb-12"
+              en="Numbers"
+              ko="아카이브 현황"
+              className="mb-14"
             />
           </Reveal>
           <ArchiveStats total={all.length} categories={categoryList.length} />
         </section>
 
-        {/* 마퀴 포인트 (full-bleed) */}
-        <div className="-mx-6 sm:-mx-12">
+        {/* 마퀴 (full-bleed) */}
+        <div className="-mx-6 sm:-mx-12 lg:-mx-20">
           <Marquee />
         </div>
 
-        {/* 6. About + CTA */}
+        {/* About + CTA */}
         <section id="about">
           <AboutCTA />
         </section>

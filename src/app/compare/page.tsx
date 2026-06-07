@@ -14,9 +14,8 @@ export default function ComparePage() {
   return (
     <main className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-12">
       <SectionHeading
-        label="Compare"
-        title="나란히 비교"
-        aside="툴을 2~3개 골라 분야·가격·강점·추천 용도를 한눈에 비교하세요."
+        en="Compare"
+        ko="툴을 나란히 비교하기"
         className="mb-12"
       />
       <CompareClient tools={tools} />

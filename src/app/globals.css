@@ -20,24 +20,26 @@
 }
 
 /* ---- Design tokens ---- */
+/* 일본 미니멀 스튜디오 톤: near-white 바탕 + near-black 텍스트, 얇은 헤어라인,
+   라임(accent)은 극히 제한적으로만 사용. */
 
-/* Light (default, no .dark class on <html>) */
+/* Light (default, no .dark class on <html>) — 추천 기본 톤 */
 :root {
-  --bg: #f4f2ec;
-  --surface: #ffffff;
-  --text: #0e0e0e;
-  --text-dim: #5a5852;
-  --border: #dad7cc;
-  --accent: #c7ff3a;
+  --bg: #f6f5f1;
+  --surface: #fcfbf8;
+  --text: #14130f;
+  --text-dim: #6c6a61;
+  --border: #e4e1d8;
+  --accent: #b8f23a;
 }
 
 /* Dark (html.dark) */
 html.dark {
-  --bg: #0e0e0e;
-  --surface: #161616;
-  --text: #f4f2ec;
-  --text-dim: #9a988f;
-  --border: #2a2a2a;
+  --bg: #0d0d0c;
+  --surface: #151513;
+  --text: #f3f1ea;
+  --text-dim: #8b8980;
+  --border: #242422;
   --accent: #c7ff3a;
 }
 
@@ -45,6 +47,13 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--text);
+  color: var(--bg);
 }
 
 /* Hide native cursor when the custom cursor is active. */

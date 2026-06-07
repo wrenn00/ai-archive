@@ -15,9 +15,8 @@ export default function ShowcasePage() {
   return (
     <main className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-12">
       <SectionHeading
-        label="Showcase"
-        title="만든 사람들"
-        aside="에디터와 수강생이 실제로 만든 작업물. 사용한 툴을 눌러 자세히 보세요."
+        en="Showcase"
+        ko="에디터와 수강생이 만든 작업물"
         className="mb-12"
       />
 

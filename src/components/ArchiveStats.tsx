@@ -22,13 +22,17 @@ export default function ArchiveStats({
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-px overflow-hidden rounded-3xl border border-border bg-border sm:grid-cols-3">
+    <div className="grid grid-cols-1 border-t border-border sm:grid-cols-3">
       {stats.map((s, i) => (
-        <Reveal key={s.label} delay={i * STAGGER} className="bg-surface">
-          <div className="flex flex-col gap-2 p-8 lg:p-12">
+        <Reveal
+          key={s.label}
+          delay={i * STAGGER}
+          className="border-b border-border sm:border-b-0 sm:border-l sm:border-border sm:first:border-l-0"
+        >
+          <div className="flex flex-col gap-3 py-10 sm:px-8 lg:px-10">
             <span
-              className="font-display font-bold leading-none tracking-tight text-text"
-              style={{ fontSize: "clamp(48px, 7vw, 96px)" }}
+              className="font-display font-medium leading-none tracking-tight text-text"
+              style={{ fontSize: "clamp(48px, 7vw, 92px)" }}
             >
               <CountUp to={s.value} suffix={s.suffix} />
             </span>
@@ -36,7 +40,6 @@ export default function ArchiveStats({
           </div>
         </Reveal>
       ))}
-      <div className="bg-surface sm:hidden" />
     </div>
   );
 }

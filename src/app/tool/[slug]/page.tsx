@@ -150,8 +150,8 @@ export default async function ToolPage({
       <section className="mt-24">
         <Reveal>
           <SectionHeading
-            label="Use cases"
-            title="이렇게 쓰세요"
+            en="Use Cases"
+            ko="이렇게 쓰세요"
             className="mb-10"
           />
         </Reveal>
@@ -174,8 +174,8 @@ export default async function ToolPage({
         <section className="mt-24">
           <Reveal>
             <SectionHeading
-              label="Pro tips"
-              title="실무 팁"
+              en="Pro Tips"
+              ko="실무 팁"
               className="mb-10"
             />
           </Reveal>
@@ -200,8 +200,8 @@ export default async function ToolPage({
         <section className="mt-24">
           <Reveal>
             <SectionHeading
-              label="Gallery"
-              title="결과물 미리보기"
+              en="Gallery"
+              ko="결과물 미리보기"
               className="mb-10"
             />
           </Reveal>
@@ -228,9 +228,8 @@ export default async function ToolPage({
         <section className="mt-24">
           <Reveal>
             <SectionHeading
-              label="Related"
-              title="비슷한 툴"
-              aside="같은 분야의 다른 선택지."
+              en="Related"
+              ko="비슷한 툴"
               className="mb-10"
             />
           </Reveal>

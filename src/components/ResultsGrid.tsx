@@ -10,8 +10,8 @@ export default function ResultsGrid({ tools }: { tools: Tool[] }) {
   const reduce = useReducedMotion();
   if (tools.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center gap-3 rounded-3xl border border-dashed border-border py-28 text-center">
-        <span className="font-display text-2xl font-bold text-text">
+      <div className="flex flex-col items-center justify-center gap-3 border-y border-border py-32 text-center">
+        <span className="font-display text-2xl font-medium tracking-tight text-text">
           결과가 없어요
         </span>
         <p className="max-w-sm font-body text-sm text-text-dim">
@@ -25,7 +25,7 @@ export default function ResultsGrid({ tools }: { tools: Tool[] }) {
   return (
     <motion.div
       layout
-      className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3"
     >
       <AnimatePresence mode="popLayout">
         {tools.map((tool) => (
