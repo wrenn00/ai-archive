@@ -124,7 +124,7 @@ export default function AboutPage() {
         <Link
           href="/archive"
           data-cursor="hover"
-          className="group inline-flex items-center gap-3 rounded-full bg-accent px-7 py-4 font-body text-base font-semibold text-bg transition-opacity hover:opacity-90"
+          className="group inline-flex items-center gap-3 rounded-full bg-accent px-7 py-4 font-body text-base font-semibold text-[#0e0e0e] transition-opacity hover:opacity-90"
         >
           전체 아카이브 보기
           <span className="transition-transform duration-300 group-hover:translate-x-1">

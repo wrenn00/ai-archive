@@ -2,7 +2,7 @@
 
 /* ---- Tailwind theme registration (Tailwind v4 CSS-based config) ---- */
 
-/* Colors map to live CSS vars so the .dark class toggle works at runtime. */
+/* Colors map to the single light-mode token set below. */
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
@@ -19,27 +19,13 @@
   --font-body: var(--font-hanken), "Pretendard", system-ui, sans-serif;
 }
 
-/* ---- Design tokens ---- */
-/* 일본 미니멀 스튜디오 톤: near-white 바탕 + near-black 텍스트, 얇은 헤어라인,
-   라임(accent)은 극히 제한적으로만 사용. */
-
-/* Light (default, no .dark class on <html>) — 추천 기본 톤 */
+/* ---- Design tokens (라이트 단일 테마) ---- */
 :root {
-  --bg: #f6f5f1;
-  --surface: #fcfbf8;
-  --text: #14130f;
-  --text-dim: #6c6a61;
-  --border: #e4e1d8;
-  --accent: #b8f23a;
-}
-
-/* Dark (html.dark) */
-html.dark {
-  --bg: #0d0d0c;
-  --surface: #151513;
-  --text: #f3f1ea;
-  --text-dim: #8b8980;
-  --border: #242422;
+  --bg: #f4f2ec;
+  --surface: #ffffff;
+  --text: #0e0e0e;
+  --text-dim: #5a5852;
+  --border: #dad7cc;
   --accent: #c7ff3a;
 }
 

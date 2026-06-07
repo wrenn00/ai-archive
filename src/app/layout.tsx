@@ -24,16 +24,6 @@ export const metadata: Metadata = {
   description: "A curated archive of AI tools.",
 };
 
-// Runs before paint to apply the saved theme (default: dark) and avoid a flash.
-const themeInit = `
-(function () {
-  try {
-    var t = localStorage.getItem("theme") || "dark";
-    if (t === "dark") document.documentElement.classList.add("dark");
-  } catch (e) {}
-})();
-`;
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,14 +33,12 @@ export default function RootLayout({
     <html
       lang="ko"
       className={`${bricolage.variable} ${hanken.variable} h-full antialiased`}
-      suppressHydrationWarning
     >
       <head>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
         />
-        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
       <body className="min-h-full flex flex-col">
         <SmoothScroll>

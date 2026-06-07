@@ -75,7 +75,7 @@ export default async function ToolPage({
             target="_blank"
             rel="noopener noreferrer"
             data-cursor="hover"
-            className="group inline-flex items-center gap-3 rounded-full bg-accent px-6 py-3 font-body font-semibold text-bg transition-opacity hover:opacity-90"
+            className="group inline-flex items-center gap-3 rounded-full bg-accent px-6 py-3 font-body font-semibold text-[#0e0e0e] transition-opacity hover:opacity-90"
           >
             공식 사이트 방문
             <span className="transition-transform duration-300 group-hover:translate-x-1">

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
-import ThemeToggle from "@/components/ThemeToggle";
 
 const NAV = [
   { label: "Archive", href: "/archive" },
@@ -69,7 +68,6 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <ThemeToggle />
         </nav>
 
         {/* Mobile hamburger */}
@@ -117,9 +115,6 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <div className="mt-6">
-            <ThemeToggle />
-          </div>
         </nav>
       </div>
     </header>
