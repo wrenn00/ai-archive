@@ -1,5 +1,6 @@
 import { imageTools } from "./image-tools";
 import { imageTools2 } from "./image-tools-2";
+import { videoTools } from "./video-tools";
 
 export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
 export type Pricing = "free" | "freemium" | "paid";
@@ -349,4 +350,9 @@ const otherTools: Tool[] = [
 ];
 
 // 이미지 모델(최신 리서치) + 나머지 카테고리 합본.
-export const tools: Tool[] = [...imageTools, ...imageTools2, ...otherTools];
+export const tools: Tool[] = [
+  ...imageTools,
+  ...imageTools2,
+  ...videoTools,
+  ...otherTools,
+];
