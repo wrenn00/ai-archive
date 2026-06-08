@@ -75,16 +75,33 @@ export default function CategoryNav({ items }: { items: CategoryNavItem[] }) {
         <div className="sticky top-28 aspect-[4/3] overflow-hidden rounded-[3px] border border-border bg-surface">
           <AnimatePresence mode="wait">
             {active ? (
-              <motion.img
-                key={active.value}
-                src={active.thumbnail}
-                alt={active.label}
-                initial={reduce ? false : { opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: reduce ? 0 : 0.5, ease: "easeOut" }}
-                className="h-full w-full object-cover"
-              />
+              /\.(mp4|webm|mov)$/i.test(active.thumbnail) ? (
+                <motion.video
+                  key={active.value}
+                  src={active.thumbnail}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                  preload="metadata"
+                  initial={reduce ? false : { opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: reduce ? 0 : 0.5, ease: "easeOut" }}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <motion.img
+                  key={active.value}
+                  src={active.thumbnail}
+                  alt={active.label}
+                  initial={reduce ? false : { opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: reduce ? 0 : 0.5, ease: "easeOut" }}
+                  className="h-full w-full object-cover"
+                />
+              )
             ) : (
               <motion.div
                 key="placeholder"
