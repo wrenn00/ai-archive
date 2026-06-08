@@ -122,7 +122,7 @@ export const imageTools2: Tool[] = [
     tagline: "디자인 파일처럼 다루는 레이아웃 우선 이미지 모델",
     description:
       "요소를 직접 배치하고 결과물을 디자인 파일처럼 편집하는 '레이아웃 우선' 접근의 이미지 모델. 최대 4K까지 또렷한 텍스트 렌더링을 지원하고, Reve Flow 기능으로 자연어 대화를 통해 이미지를 실시간 수정할 수 있어 배우기 쉽다는 평이 많다.",
-    categories: ["image", "uiux"],
+    categories: ["image"],
     pricing: "freemium",
     priceNote: "무료 티어 제공 / 유료 플랜 별도 (2026 기준)",
     strengths: ["레이아웃 정밀 배치", "또렷한 4K 텍스트", "대화형 실시간 편집(Reve Flow)", "쉬운 학습 곡선"],
