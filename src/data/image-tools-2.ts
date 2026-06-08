@@ -123,26 +123,6 @@ export const imageTools2: Tool[] = [
     featured: false,
   },
   {
-    slug: "z-image",
-    name: "Z-Image",
-    tagline: "로컬에서 무료로 돌리는 알리바바의 오픈소스 모델",
-    description:
-      "알리바바 통이(Tongyi) 연구소가 공개한 60억 파라미터 오픈소스 이미지 모델. Apache 2.0 라이선스로 상업 사용이 자유롭고, 일반 소비자 GPU에서도 돌아갈 만큼 가볍다. 8스텝 만에 사실적 이미지를 뽑는 빠른 Turbo 버전과 파인튜닝용 Base 버전이 있으며, 영어·중국어 텍스트 렌더링이 정확하다.",
-    categories: ["image"],
-    pricing: "free",
-    priceNote: "오픈소스 무료(Apache 2.0), 로컬 실행 (2026 기준)",
-    strengths: ["완전 오픈소스·상업 사용 자유", "로컬 실행(저사양 GPU 가능)", "매우 빠른 생성", "영어·중국어 텍스트 렌더링"],
-    useCases: ["비용 없는 대량 생성", "자체 파인튜닝·커스터마이징", "프라이버시가 중요한 작업", "로컬 워크플로(ComfyUI 등)"],
-    tips: [
-      "클라우드 구독 없이 내 컴퓨터에서 무제한으로 돌리고 싶을 때 1순위.",
-      "빠른 결과는 Turbo, 세밀한 커스터마이징은 Base 버전을 쓴다.",
-    ],
-    thumbnail: "https://picsum.photos/seed/zimage/800/500",
-    officialUrl: "https://github.com/Tongyi-MAI/Z-Image",
-    addedAt: "2026-01-28",
-    featured: false,
-  },
-  {
     slug: "topaz",
     name: "Topaz",
     tagline: "디테일 '보존'에 강한 실사진용 업스케일·복원 도구 (Gigapixel 8)",

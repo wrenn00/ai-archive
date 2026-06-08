@@ -15,29 +15,6 @@ import type { Tool } from "./tools";
 
 export const renderTools: Tool[] = [
   {
-    slug: "upscayl",
-    name: "Upscayl",
-    tagline: "워터마크·계정 없이 로컬에서 돌리는 무료 오픈소스 업스케일러",
-    description:
-      "Windows·macOS·Linux에서 로컬로 동작하는 무료 오픈소스 데스크톱 업스케일러. Real-ESRGAN 계열 모델을 사용해 이미지를 2×·3×·4×(최대 16×)로 키운다. 모든 처리가 내 컴퓨터에서 일어나 업로드·파일 크기 제한·구독이 없고, 결과물에 워터마크도 없다. 프라이버시가 중요하거나 비용 없이 쓰려는 경우에 가장 명확한 선택지다.",
-    categories: ["render"],
-    pricing: "free",
-    priceNote: "2026 기준 · 무료 오픈소스(데스크톱) · 일부 클라우드 기능은 별도",
-    strengths: [
-      "완전 무료·오픈소스, 워터마크/계정 불필요",
-      "로컬 처리 — 업로드 없이 프라이버시 보장",
-      "Win·Mac·Linux 네이티브 앱, 배치 처리",
-    ],
-    useCases: ["민감한 클라이언트 이미지를 외부 업로드 없이 4× 업스케일"],
-    tips: [
-      "4× 초과(최대 16×)는 AI 효과가 약해지고 기기 성능을 많이 타니, 보통 4×까지가 안전하다.",
-    ],
-    thumbnail: "https://picsum.photos/seed/upscayl/800/500",
-    officialUrl: "https://upscayl.org/",
-    addedAt: "2026-04-12",
-    featured: true,
-  },
-  {
     slug: "supir",
     name: "SUPIR",
     tagline: "오픈소스 디퓨전 복원의 선두, ComfyUI로 쓰는 업스케일러",
