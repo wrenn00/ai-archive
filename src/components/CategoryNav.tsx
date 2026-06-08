@@ -14,14 +14,16 @@ export interface CategoryNavItem {
 }
 
 export default function CategoryNav({ items }: { items: CategoryNavItem[] }) {
-  const [active, setActive] = useState<CategoryNavItem | null>(null);
+  // 호버하지 않을 때의 기본 프리뷰 = 첫 카테고리(이미지 생성)
+  const defaultItem = items[0] ?? null;
+  const [active, setActive] = useState<CategoryNavItem | null>(defaultItem);
   const reduce = useReducedMotion();
 
   return (
     <div className="relative grid grid-cols-1 gap-12 lg:grid-cols-[1.5fr_1fr]">
       <ul
         className="flex flex-col border-t border-border"
-        onMouseLeave={() => setActive(null)}
+        onMouseLeave={() => setActive(defaultItem)}
       >
         {items.map((item, i) => {
           const on = active?.value === item.value;
