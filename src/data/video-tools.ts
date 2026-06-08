@@ -184,7 +184,15 @@ export const videoTools: Tool[] = [
     tips: [
       "컬러 그레이딩이 중요한 작업이면 EXR 출력을 살려 후반에서 손보는 게 강점.",
     ],
-    thumbnail: "https://picsum.photos/seed/luma-ray3/800/500",
+    thumbnail: "/tools/luma/lm-1.mp4",
+    gallery: [
+      "/tools/luma/lm-1.mp4",
+      "/tools/luma/lm-2.mp4",
+      "/tools/luma/lm-3.mp4",
+      "/tools/luma/lm-4.mp4",
+      "/tools/luma/lm-5.mp4",
+      "/tools/luma/lm-6.mp4",
+    ],
     officialUrl: "https://lumalabs.ai/dream-machine",
     addedAt: "2026-01-22",
     featured: false,
