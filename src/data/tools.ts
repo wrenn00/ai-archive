@@ -3,6 +3,7 @@ import { imageTools2 } from "./image-tools-2";
 import { videoTools } from "./video-tools";
 import { threeDTools } from "./3d-tools";
 import { uiuxTools } from "./uiux-tools";
+import { renderTools } from "./render-tools";
 
 export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
 export type Pricing = "free" | "freemium" | "paid";
@@ -301,24 +302,25 @@ const otherTools: Tool[] = [
   {
     slug: "magnific-ai",
     name: "Magnific AI",
-    tagline: "디테일을 창조하는 업스케일러",
+    tagline: "디테일을 '재창조'하는 업스케일러 (Precision V2)",
     description:
-      "단순 확대를 넘어 없던 디테일을 새로 그려 넣는 업스케일·인핸스 도구. 'creativity' 슬라이더로 원본 충실도와 상상력의 균형을 조절하며 저해상도 이미지를 인쇄급으로 끌어올린다.",
+      "단순 확대를 넘어 없던 디테일을 새로 그려 넣는 디퓨전 기반 업스케일·인핸스 도구. 2026년 기준 최신은 Precision V2로, 원본을 덜 흐트러뜨리면서 디테일을 재창조해 AI 아트·일러스트·렌더 이미지에 특히 강하다. 'creativity' 슬라이더로 충실도와 상상력의 균형을 조절한다. 2024년 5월 Freepik에 인수됐고 2026년 4월 Freepik이 Magnific 브랜드로 리브랜딩하며 핵심 이미지 제품으로 통합됐다.",
     categories: ["render", "image"],
     pricing: "paid",
-    priceNote: "유료 구독",
+    priceNote: "유료 구독 · Freepik에 통합 (2026 기준)",
     strengths: [
-      "디테일 재생성형 업스케일",
-      "creativity·HDR 슬라이더",
-      "인쇄급 고해상도 출력",
+      "디테일 재창조형 업스케일(AI 아트에 강함)",
+      "Precision V2 — 원본 보존 강화 + creativity·HDR 슬라이더",
+      "Freepik 생태계 통합",
     ],
     useCases: [
-      "AI 이미지 후보정",
-      "저해상 소스 복원",
+      "AI 이미지·일러스트 후보정",
+      "저해상 소스의 디테일 재창조",
       "제품 비주얼 디테일 강화",
     ],
     tips: [
       "creativity를 너무 높이면 원본과 멀어지니 중간값부터 올려 본다.",
+      "실제 사진의 사실 보존이 중요하면 Topaz(보존형)와 용도를 구분해 쓴다.",
     ],
     thumbnail: img("magnific"),
     gallery: gal("magnific"),
@@ -334,5 +336,6 @@ export const tools: Tool[] = [
   ...videoTools,
   ...threeDTools,
   ...uiuxTools,
+  ...renderTools,
   ...otherTools,
 ];
