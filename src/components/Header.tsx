@@ -7,7 +7,6 @@ import clsx from "clsx";
 const NAV = [
   { label: "Archive", href: "/archive" },
   { label: "Compare", href: "/compare" },
-  { label: "Showcase", href: "/showcase" },
   { label: "About", href: "/about" },
 ];
 

@@ -60,7 +60,7 @@ export default function Home() {
         </section>
 
         {/* 에디터스 픽 */}
-        <section id="showcase">
+        <section id="featured">
           <Reveal>
             <SectionHeading
               en="Featured"
