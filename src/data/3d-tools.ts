@@ -85,7 +85,7 @@ export const threeDTools: Tool[] = [
     tips: [
       "자체 구동에는 성능 좋은 GPU가 필요하다. 가볍게 쓰려면 이 모델을 제공하는 호스팅 서비스로 시작해도 된다.",
     ],
-    thumbnail: "https://picsum.photos/seed/hunyuan3d/800/500",
+    thumbnail: "/tools/hunyuan3d/hu-1.webp",
     officialUrl: "https://github.com/Tencent/Hunyuan3D-2",
     addedAt: "2026-03-15",
     featured: true,
