@@ -56,7 +56,15 @@ export const videoTools: Tool[] = [
     tips: [
       "리서치 중 확인: 헐리우드 스튜디오와의 저작권 분쟁으로 일부 지역 롤아웃이 보류된 적이 있어, 상업 사용 시 약관을 꼭 확인.",
     ],
-    thumbnail: "https://picsum.photos/seed/seedance-2-0/800/500",
+    thumbnail: "/tools/seedance/sd-1.mp4",
+    gallery: [
+      "/tools/seedance/sd-1.mp4",
+      "/tools/seedance/sd-2.mp4",
+      "/tools/seedance/sd-3.mp4",
+      "/tools/seedance/sd-4.mp4",
+      "/tools/seedance/sd-5.mp4",
+      "/tools/seedance/sd-6.mp4",
+    ],
     officialUrl: "https://seed.bytedance.com/en/seedance2_0",
     addedAt: "2026-02-20",
     featured: true,
