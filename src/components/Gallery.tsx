@@ -47,7 +47,7 @@ export default function Gallery({
     <>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((src, i) => (
-          <Reveal key={src} delay={(i % 3) * STAGGER}>
+          <Reveal key={`${i}-${src}`} delay={(i % 3) * STAGGER}>
             <button
               type="button"
               onClick={() => setOpen(i)}

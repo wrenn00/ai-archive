@@ -56,6 +56,7 @@ export const imageTools2: Tool[] = [
       "/tools/seedream/sd-9.webp",
       "/tools/seedream/sd-10.webp",
       "/tools/seedream/sd-11.webp",
+      "/tools/seedream/sd-1.webp",
     ],
     officialUrl: "https://seed.bytedance.com/",
     addedAt: "2026-02-15",
