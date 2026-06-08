@@ -235,29 +235,6 @@ export const videoTools: Tool[] = [
     featured: false,
   },
   {
-    slug: "adobe-firefly-video",
-    name: "Adobe Firefly Video",
-    tagline: "상업적으로 안전한, IP 보호가 되는 어도비 영상 모델",
-    description:
-      "어도비 Firefly의 영상 생성 모델. 라이선스가 명확한 데이터로 학습해 상업적 사용이 안전하고, 결과물이 기존 IP를 침해했다는 주장에 대한 법적 보호(IP 인뎀니피케이션)를 제공하는 드문 모델이다. 크리에이티브 클라우드 워크플로우와 통합된다.",
-    categories: ["video"],
-    pricing: "paid",
-    priceNote: "2026 기준 · 크리에이티브 클라우드/Firefly 구독 · 무료 크레딧 일부 제공",
-    strengths: [
-      "상업적 안전성 — 라이선스 명확, IP 법적 보호 제공",
-      "Premiere 등 어도비 생태계와의 통합",
-      "기업·브랜드 작업에서 리스크가 낮음",
-    ],
-    useCases: ["브랜드 캠페인 등 저작권 리스크를 줄여야 하는 상업 영상 제작"],
-    tips: [
-      "품질 순위는 최상위권이 아니어도, 법적 안전성이 중요한 상업 작업이면 우선 후보.",
-    ],
-    thumbnail: "https://picsum.photos/seed/adobe-firefly-video/800/500",
-    officialUrl: "https://www.adobe.com/products/firefly.html",
-    addedAt: "2026-03-01",
-    featured: false,
-  },
-  {
     slug: "vidu",
     name: "Vidu",
     tagline: "캐릭터 일관성과 낮은 단가가 강점인 Shengshu의 영상 모델",
