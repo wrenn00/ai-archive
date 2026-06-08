@@ -15,12 +15,18 @@ export default function Home() {
   const all = getAllTools();
   const counts = getCategoryCounts();
 
+  // 카테고리별 프리뷰 대표 도구(없으면 해당 카테고리 첫 도구)
+  const PREVIEW_SLUG: Partial<Record<string, string>> = {
+    "3d": "stability-sf3d",
+  };
+
   const categoryItems: CategoryNavItem[] = categoryList.map(
     ({ value, label }) => ({
       value,
       label,
       count: counts[value] ?? 0,
       thumbnail:
+        all.find((t) => t.slug === PREVIEW_SLUG[value])?.thumbnail ??
         all.find((t) => t.categories.includes(value))?.thumbnail ??
         all[0].thumbnail,
     }),
