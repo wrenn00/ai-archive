@@ -75,7 +75,7 @@ const otherTools: Tool[] = [
       "ComfyUI로 노드 기반 워크플로를 저장해 재사용한다.",
       "negative prompt에 'lowres, bad hands'를 넣어 품질을 끌어올린다.",
     ],
-    thumbnail: "/tools/stablediffusion/sd-1.webp",
+    thumbnail: "/tools/stablediffusion/sd-8.webp",
     gallery: [
       "/tools/stablediffusion/sd-1.webp",
       "/tools/stablediffusion/sd-2.webp",
