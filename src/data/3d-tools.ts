@@ -169,4 +169,28 @@ export const threeDTools: Tool[] = [
     addedAt: "2026-01-30",
     featured: false,
   },
+  {
+    slug: "varco-3d",
+    name: "VARCO 3D",
+    tagline: "NCSOFT의 게임 제작 파이프라인을 담은 텍스트·이미지→3D 도구",
+    description:
+      "NCSOFT의 AI 자회사 NC AI가 만든 3D 생성 플랫폼(2025년 12월 정식 출시). 텍스트나 이미지 입력만으로 메시·텍스처를 생성하고, 컨셉→모델 생성→리메싱→기본 애니메이션까지 브라우저에서 한 번에 처리한다. 기존 3~4주 걸리던 3D 에셋 제작을 수 분으로 줄이는 것을 목표로 하며, 게임에 바로 쓸 수 있는 토폴로지를 지향한다. Meshy·Tripo 같은 순수 AI 스타트업과 달리 AAA 게임 스튜디오의 실제 제작 파이프라인이 뒤에 있다는 점이 차별점이다.",
+    categories: ["3d"],
+    pricing: "freemium",
+    priceNote:
+      "2026 기준 · 무료(크레딧 2,000, 약 10개 생성) + 유료(동시 5개·고급 리메싱) · 에셋당 약 500원 수준",
+    strengths: [
+      "컨셉→리메싱→기본 애니까지 브라우저 올인원 파이프라인",
+      "게임용 토폴로지 지향(NCSOFT 제작 노하우 기반)",
+      "한국 서비스 — 국내 사용자 접근성",
+    ],
+    useCases: ["컨셉 이미지 한 장에서 게임용 3D 에셋을 수 분 만에 생성"],
+    tips: [
+      "무료 플랜으로 품질을 먼저 보고, 대량 생성·고급 리메싱이 필요하면 유료로. 산업용 정밀도(CAD·디지털 트윈) 쪽으로도 확장 중이다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/varco-3d/800/500",
+    officialUrl: "https://3d.varco.ai/",
+    addedAt: "2025-12-01",
+    featured: false,
+  },
 ];
