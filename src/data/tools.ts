@@ -192,30 +192,6 @@ const otherTools: Tool[] = [
     addedAt: "2025-10-22",
   },
 
-  {
-    slug: "sora",
-    name: "Sora",
-    tagline: "물리를 이해하는 텍스트→영상 모델",
-    description:
-      "OpenAI가 공개한 텍스트-투-비디오 모델로, 장면 안의 사물과 인물이 물리 법칙을 비교적 일관되게 따른다. 한 프롬프트로 여러 샷이 이어지는 복잡한 장면을 만들어 내며 리믹스·스토리보드 편집 기능을 제공한다.",
-    categories: ["video"],
-    pricing: "paid",
-    priceNote: "ChatGPT Plus/Pro 플랜 연동",
-    strengths: [
-      "장면의 물리적 일관성",
-      "복잡한 멀티샷 연출",
-      "스토리보드·리믹스 편집",
-    ],
-    useCases: [
-      "콘셉트 필름",
-      "광고 프리비주얼",
-      "내러티브 영상 실험",
-    ],
-    thumbnail: img("sora"),
-    gallery: gal("sora"),
-    officialUrl: "https://openai.com/sora",
-    addedAt: "2025-11-08",
-  },
 
   // ------------------------------------------------------------------- 3D
   {
