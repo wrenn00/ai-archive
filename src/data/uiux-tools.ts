@@ -115,7 +115,7 @@ export const uiuxTools: Tool[] = [
     tips: [
       "Lovable과 성격이 비슷하다. 코드 제어를 더 원하면 Bolt, 비개발자 친화 풀스택이면 Lovable 쪽.",
     ],
-    thumbnail: "https://picsum.photos/seed/bolt-new/800/500",
+    thumbnail: "/tools/bolt/bolt-1.webm",
     officialUrl: "https://bolt.new/",
     addedAt: "2026-03-20",
     featured: false,
