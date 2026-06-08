@@ -9,15 +9,8 @@ const LINKS = [
 export default function Footer() {
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-20 sm:px-12 lg:px-20 lg:py-24">
-        <p
-          className="max-w-3xl font-display font-medium leading-[1.1] tracking-tight text-text"
-          style={{ fontSize: "clamp(28px, 4vw, 52px)" }}
-        >
-          정보는 모두의 것이어야 한다.
-        </p>
-
-        <div className="flex flex-col justify-between gap-8 border-t border-border pt-10 sm:flex-row sm:items-end">
+      <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 sm:px-12 lg:px-20">
+        <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
           <nav className="flex flex-wrap gap-x-8 gap-y-3">
             {LINKS.map((c) => (
               <Link
