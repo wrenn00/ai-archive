@@ -163,7 +163,7 @@ export default async function ToolPage({
           {tool.useCases.map((u, i) => (
             <Reveal key={u} delay={i * STAGGER}>
               <div className="flex h-full flex-col gap-3 rounded-2xl border border-border bg-surface p-6">
-                <span className="font-mono text-sm text-accent">
+                <span className="font-body text-sm text-accent [font-variant-numeric:tabular-nums]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <p className="font-body text-base text-text">{u}</p>

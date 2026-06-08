@@ -53,7 +53,7 @@ export default async function ArchivePage({
 
       <FilterBar {...state} />
 
-      <p className="py-8 font-mono text-xs uppercase tracking-widest text-text-dim">
+      <p className="py-8 font-body text-xs uppercase tracking-widest text-text-dim [font-variant-numeric:tabular-nums]">
         <span className="text-text">{String(results.length).padStart(2, "0")}</span>{" "}
         Tools
       </p>

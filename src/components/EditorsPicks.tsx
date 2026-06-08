@@ -29,7 +29,7 @@ export default function EditorsPicks({ tools }: { tools: Tool[] }) {
             </div>
 
             <div className="flex flex-col gap-6">
-              <span className="font-mono text-xs text-text-dim">
+              <span className="font-body text-xs text-text-dim [font-variant-numeric:tabular-nums]">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="flex flex-col gap-4">

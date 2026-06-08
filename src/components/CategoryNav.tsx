@@ -34,7 +34,7 @@ export default function CategoryNav({ items }: { items: CategoryNavItem[] }) {
                 className="group flex items-center justify-between border-b border-border py-7 transition-colors"
               >
                 <div className="flex items-baseline gap-5 sm:gap-8">
-                  <span className="font-mono text-xs text-text-dim">
+                  <span className="font-body text-xs text-text-dim [font-variant-numeric:tabular-nums]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span
@@ -49,7 +49,7 @@ export default function CategoryNav({ items }: { items: CategoryNavItem[] }) {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <span className="font-mono text-xs text-text-dim">
+                  <span className="font-body text-xs text-text-dim [font-variant-numeric:tabular-nums]">
                     {String(item.count).padStart(2, "0")}
                   </span>
                   <span
