@@ -131,7 +131,8 @@ export const threeDTools: Tool[] = [
     tips: [
       "프린팅이 목적이면 해상도와 워터타이트 메시 품질이 강점. 게임용은 폴리곤 감량이 필요할 수 있다.",
     ],
-    thumbnail: "https://picsum.photos/seed/hitem3d/800/500",
+    thumbnail: "/tools/hitem3d/ht-1.webm",
+    gallery: ["/tools/hitem3d/ht-1.webm", "/tools/hitem3d/ht-2.webm"],
     officialUrl: "https://hitem3d.ai/",
     addedAt: "2026-03-25",
     featured: false,
