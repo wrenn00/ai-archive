@@ -277,7 +277,7 @@ export const imageTools: Tool[] = [
       "프롬프트 엔지니어링보다 직접 그리며 조정하는 시각적 작업에 강하다.",
       "여러 모델을 바로 바꿔가며 비교할 수 있어 어떤 모델이 맞는지 테스트하기 좋다.",
     ],
-    thumbnail: "/tools/krea/kr-1.webp",
+    thumbnail: "/tools/krea/kr-4.webp",
     gallery: [
       "/tools/krea/kr-1.webp",
       "/tools/krea/kr-2.webp",
