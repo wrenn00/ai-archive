@@ -122,24 +122,4 @@ export const imageTools2: Tool[] = [
     addedAt: "2026-03-01",
     featured: false,
   },
-  {
-    slug: "topaz",
-    name: "Topaz",
-    tagline: "디테일 '보존'에 강한 실사진용 업스케일·복원 도구 (Gigapixel 8)",
-    description:
-      "AI로 이미지 해상도와 디테일을 끌어올리는 업스케일·화질 향상 전문 도구. 2026년 기준 최신은 Gigapixel 8(8.2)·Photo AI로, 원본에 없던 걸 상상해 그려 넣기보다 실제 픽셀의 디테일을 '보존'하며 키우는 비생성 계열이라 실제 사진(인물·풍경·제품)에 특히 강하다. 인쇄용 고해상 출력이나 저해상 소스 보정, 생성 모델 결과물의 최종 마무리 단계에서 많이 쓰인다.",
-    categories: ["render"],
-    pricing: "paid",
-    priceNote: "유료 소프트웨어(영구 라이선스/구독) (2026 기준)",
-    strengths: ["디테일 보존형 업스케일(실사진에 강함)", "노이즈·블러 보정과 얼굴 복원", "인쇄용 고해상 출력", "다른 생성 모델과 마무리 조합"],
-    useCases: ["실제 사진의 고해상화·복원", "인쇄용 고해상화", "AI 생성물 최종 화질 마무리", "오래된 사진 복원"],
-    tips: [
-      "생성→Topaz 업스케일 순으로 쓰면 최종 품질이 한 단계 올라간다.",
-      "생성 도구가 아니므로 '만들기'가 아니라 '키우기/다듬기' 단계에 배치한다.",
-    ],
-    thumbnail: "https://picsum.photos/seed/topaz/800/500",
-    officialUrl: "https://www.topazlabs.com/",
-    addedAt: "2026-01-10",
-    featured: false,
-  },
 ];

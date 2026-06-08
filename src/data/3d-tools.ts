@@ -111,7 +111,7 @@ export const threeDTools: Tool[] = [
     tagline: "다중 뷰 복원과 초고해상도 메시에 강한 3D 모델",
     description:
       "여러 각도의 이미지를 결합해 정밀하게 복원하는 다중 뷰 3D 생성 도구. 최대 1536³의 고해상도 메시와 부위별 시맨틱 분할을 지원하고, 깔끔한 STL 익스포트로 미니어처·피규어 등 3D 프린팅에 특히 강하다.",
-    categories: ["3d", "render"],
+    categories: ["3d"],
     pricing: "freemium",
     priceNote: "2026 기준 · 무료 체험 + 유료 구독(생성량 기준)",
     strengths: [

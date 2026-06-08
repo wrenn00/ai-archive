@@ -133,26 +133,6 @@ export const imageTools: Tool[] = [
     featured: true,
   },
   {
-    slug: "flux-2",
-    name: "FLUX.2",
-    tagline: "프로덕션 우선, 통제력이 강한 오픈웨이트 계열 모델",
-    description:
-      "Stability AI 출신들이 만든 Black Forest Labs의 모델. '느낌'보다 재현성과 정밀한 통제를 우선해 상업 프로덕션에 강하다. 빠른 Klein, 균형형 Dev/Flex, 최고 품질 Pro 등 용도별 변형이 있고, 여러 레퍼런스 이미지로 브랜드 일관성을 맞추는 멀티 레퍼런스가 특징. 일부 버전은 직접 설치(로컬)도 가능하다.",
-    categories: ["image"],
-    pricing: "freemium",
-    priceNote: "API 종량제(1크레딧=$0.01, 해상도별 과금) / 무료 체험 제공 (2026 기준)",
-    strengths: ["정밀한 통제·재현성", "멀티 레퍼런스로 브랜드 정렬", "4MP 고해상도", "로컬 설치 가능 변형"],
-    useCases: ["캠페인 키비주얼", "인쇄·패키지용 이미지", "브랜드 일관 에셋 대량 생성", "자체 파인튜닝"],
-    tips: [
-      "탐색은 가벼운 Klein/Dev로, 최종 납품물만 Pro로 뽑으면 비용이 절약된다.",
-      "여러 참고 이미지를 함께 넣어 스타일·색감을 고정하는 워크플로에 강하다.",
-    ],
-    thumbnail: "https://picsum.photos/seed/flux2/800/500",
-    officialUrl: "https://bfl.ai/",
-    addedAt: "2026-01-15",
-    featured: false,
-  },
-  {
     slug: "adobe-firefly",
     name: "Adobe Firefly",
     tagline: "상업적으로 안전한, 크리에이티브 클라우드 통합 도구",

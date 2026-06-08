@@ -3,9 +3,8 @@ import { imageTools2 } from "./image-tools-2";
 import { videoTools } from "./video-tools";
 import { threeDTools } from "./3d-tools";
 import { uiuxTools } from "./uiux-tools";
-import { renderTools } from "./render-tools";
 
-export type Category = "image" | "video" | "3d" | "uiux" | "render";
+export type Category = "image" | "video" | "3d" | "uiux";
 export type Pricing = "free" | "freemium" | "paid";
 
 export interface ToolVersion {
@@ -235,7 +234,7 @@ const otherTools: Tool[] = [
     tagline: "사진과 영상에서 3D를",
     description:
       "스마트폰 촬영물로 NeRF·가우시안 스플래팅 기반의 정교한 3D 캡처를 만들어 내는 도구. 실제 공간이나 사물을 빠르게 3D 에셋으로 디지털화할 수 있다.",
-    categories: ["3d", "render"],
+    categories: ["3d"],
     pricing: "freemium",
     priceNote: "무료 캡처 제공",
     strengths: [
@@ -339,7 +338,7 @@ const otherTools: Tool[] = [
     tagline: "디테일을 '재창조'하는 업스케일러 (Precision V2)",
     description:
       "단순 확대를 넘어 없던 디테일을 새로 그려 넣는 디퓨전 기반 업스케일·인핸스 도구. 2026년 기준 최신은 Precision V2로, 원본을 덜 흐트러뜨리면서 디테일을 재창조해 AI 아트·일러스트·렌더 이미지에 특히 강하다. 'creativity' 슬라이더로 충실도와 상상력의 균형을 조절한다. 2024년 5월 Freepik에 인수됐고 2026년 4월 Freepik이 Magnific 브랜드로 리브랜딩하며 핵심 이미지 제품으로 통합됐다.",
-    categories: ["render", "image"],
+    categories: ["image"],
     pricing: "paid",
     priceNote: "유료 구독 · Freepik에 통합 (2026 기준)",
     strengths: [
@@ -370,6 +369,5 @@ export const tools: Tool[] = [
   ...videoTools,
   ...threeDTools,
   ...uiuxTools,
-  ...renderTools,
   ...otherTools,
 ];
