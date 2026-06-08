@@ -30,7 +30,7 @@ export const threeDTools: Tool[] = [
     tips: [
       "생성은 무료, 다운로드 시 과금 구조라 여러 안을 먼저 뽑아보고 마음에 드는 것만 받는 게 효율적.",
     ],
-    thumbnail: "https://picsum.photos/seed/rodin-hyper3d/800/500",
+    thumbnail: "/tools/rodin/rd-1.png",
     officialUrl: "https://hyper3d.ai/",
     addedAt: "2026-05-10",
     featured: true,
@@ -54,7 +54,15 @@ export const threeDTools: Tool[] = [
     tips: [
       "v3.0은 디테일이 높은 대신 느리니(약 100초), 반복 테스트는 빠른 버전으로 돌리는 게 좋다.",
     ],
-    thumbnail: "https://picsum.photos/seed/tripo-ai/800/500",
+    thumbnail: "/tools/tripo/tp-1.webm",
+    gallery: [
+      "/tools/tripo/tp-1.webm",
+      "/tools/tripo/tp-2.webm",
+      "/tools/tripo/tp-3.png",
+      "/tools/tripo/tp-4.png",
+      "/tools/tripo/tp-5.png",
+      "/tools/tripo/tp-1.webm",
+    ],
     officialUrl: "https://www.tripo3d.ai/",
     addedAt: "2026-04-20",
     featured: true,
@@ -147,7 +155,15 @@ export const threeDTools: Tool[] = [
     tips: [
       "최종 품질보다 속도·반복이 중요한 단계에서 쓰고, 마무리는 Rodin·Tripo 같은 고품질 모델로 넘기면 좋다.",
     ],
-    thumbnail: "https://picsum.photos/seed/stability-sf3d/800/500",
+    thumbnail: "/tools/sf3d/sf-1.gif",
+    gallery: [
+      "/tools/sf3d/sf-1.gif",
+      "/tools/sf3d/sf-2.gif",
+      "/tools/sf3d/sf-3.gif",
+      "/tools/sf3d/sf-4.gif",
+      "/tools/sf3d/sf-5.gif",
+      "/tools/sf3d/sf-1.gif",
+    ],
     officialUrl: "https://stability.ai/stable-3d",
     addedAt: "2026-01-30",
     featured: false,
