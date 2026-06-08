@@ -108,7 +108,7 @@ export const threeDTools: Tool[] = [
     tips: [
       "최종 게임 에셋은 리토폴로지가 필요할 수 있으니, 프리비즈·시각화 단계에서 강점을 살리는 게 좋다.",
     ],
-    thumbnail: "https://picsum.photos/seed/trellis-2/800/500",
+    thumbnail: "/tools/trellis/tr2-1.mp4",
     officialUrl: "https://trellis3d.github.io/",
     addedAt: "2026-02-10",
     featured: false,
