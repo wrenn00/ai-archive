@@ -31,7 +31,8 @@ export const uiuxTools: Tool[] = [
     tips: [
       "결과가 generic해지기 쉬우니 프롬프트를 구체적으로. 탐색은 Stitch, 정밀 마무리는 Figma로 가는 워크플로우가 정석.",
     ],
-    thumbnail: "https://picsum.photos/seed/google-stitch/800/500",
+    thumbnail: "/tools/stitch/st-1.webp",
+    gallery: ["/tools/stitch/st-1.webp", "/tools/stitch/st-2.webp"],
     officialUrl: "https://stitch.withgoogle.com/",
     addedAt: "2026-05-15",
     featured: true,
