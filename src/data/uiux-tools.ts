@@ -144,7 +144,12 @@ export const uiuxTools: Tool[] = [
     tips: [
       "코드 1:1 핸드오프가 목적이면 강점이 크다. 풀스택 작동 앱이 필요하면 Lovable/Bolt를 병행.",
     ],
-    thumbnail: "https://picsum.photos/seed/ux-pilot/800/500",
+    thumbnail: "/tools/uxpilot/up-1.mp4",
+    gallery: [
+      "/tools/uxpilot/up-1.mp4",
+      "/tools/uxpilot/up-2.mp4",
+      "/tools/uxpilot/up-3.mp4",
+    ],
     officialUrl: "https://uxpilot.ai/",
     addedAt: "2026-03-05",
     featured: false,
