@@ -266,4 +266,27 @@ export const videoTools: Tool[] = [
     addedAt: "2026-04-02",
     featured: false,
   },
+  {
+    slug: "pixverse",
+    name: "PixVerse",
+    tagline: "빠르고 스타일라이즈드 영상에 강한, 접근성 좋은 영상 모델",
+    description:
+      "Aishi Technology가 만든 영상 생성 모델. 텍스트·이미지에서 30~60초 안에 짧은 클립을 만들고, 시작·끝 프레임 제어와 360p~4K 해상도, 5~15초 길이를 지원한다. 최신 V6는 카메라 워크·캐릭터 연기·멀티샷과 네이티브 오디오를 개선했고, 영화 제작용 C1(스토리보드→영상)과 실시간 월드 모델 R1까지 라인업을 넓혔다. 스타일라이즈드·애니 비주얼에 특히 강하고 무료 티어가 있어 진입이 쉽다.",
+    categories: ["video"],
+    pricing: "freemium",
+    priceNote: "2026 기준 · 무료(워터마크) + 유료 ~$199/월 · API 약 $0.01/초(Fal 등)",
+    strengths: [
+      "빠른 생성(30~60초)과 낮은 진입 장벽",
+      "스타일라이즈드·애니 비주얼에 강함",
+      "시작·끝 프레임 제어 + 네이티브 오디오(V6)",
+    ],
+    useCases: ["소셜용 짧은 스타일라이즈드 클립을 빠르게 대량 생성"],
+    tips: [
+      "'완성 영상'이 아니라 '시도'에 과금되는 구조라 보통 클립당 2~5번 반복이 필요하다. 무료는 워터마크가 붙으니 공개용은 유료가 필요.",
+    ],
+    thumbnail: "https://picsum.photos/seed/pixverse/800/500",
+    officialUrl: "https://pixverse.ai/",
+    addedAt: "2026-05-20",
+    featured: false,
+  },
 ];
