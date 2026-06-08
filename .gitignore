@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 로컬 소스 드롭 폴더(원본 미디어) — 커밋·Tailwind 스캔 모두 제외
+/image/
+/3D/
+/video/
+/pixverse_i2i_ori_*.png
