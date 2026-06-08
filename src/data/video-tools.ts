@@ -134,7 +134,15 @@ export const videoTools: Tool[] = [
     tips: [
       "자체 호스팅은 GPU 자원이 필요하니, 가벼운 사용은 호스팅 API로 시작하는 게 편하다.",
     ],
-    thumbnail: "https://picsum.photos/seed/wan-2-7/800/500",
+    thumbnail: "/tools/wan/wn-1.mp4",
+    gallery: [
+      "/tools/wan/wn-1.mp4",
+      "/tools/wan/wn-2.mp4",
+      "/tools/wan/wn-3.mp4",
+      "/tools/wan/wn-4.mp4",
+      "/tools/wan/wn-5.mp4",
+      "/tools/wan/wn-6.mp4",
+    ],
     officialUrl: "https://github.com/Wan-Video",
     addedAt: "2026-04-05",
     featured: false,
