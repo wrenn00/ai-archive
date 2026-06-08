@@ -299,8 +299,7 @@ const otherTools: Tool[] = [
     tips: [
       "원하는 레퍼런스 스크린샷을 붙이면 레이아웃 재현도가 올라간다.",
     ],
-    thumbnail: img("v0"),
-    gallery: gal("v0"),
+    thumbnail: "/tools/v0/v0-1.png",
     officialUrl: "https://v0.dev",
     addedAt: "2025-11-20",
     featured: true,
