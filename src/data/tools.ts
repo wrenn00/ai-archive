@@ -2,6 +2,7 @@ import { imageTools } from "./image-tools";
 import { imageTools2 } from "./image-tools-2";
 import { videoTools } from "./video-tools";
 import { threeDTools } from "./3d-tools";
+import { uiuxTools } from "./uiux-tools";
 
 export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
 export type Pricing = "free" | "freemium" | "paid";
@@ -272,35 +273,11 @@ const otherTools: Tool[] = [
     featured: true,
   },
   {
-    slug: "galileo-ai",
-    name: "Galileo AI",
-    tagline: "텍스트에서 고해상도 UI 디자인",
-    description:
-      "원하는 화면을 문장으로 설명하면 편집 가능한 고해상도 UI 디자인을 생성한다. 결과를 피그마로 내보내 디테일을 다듬을 수 있어 디자이너의 초안 작업을 빠르게 한다.",
-    categories: ["uiux"],
-    pricing: "paid",
-    priceNote: "유료 구독",
-    strengths: [
-      "완성도 높은 화면 시안",
-      "피그마 익스포트",
-      "일관된 디자인 시스템",
-    ],
-    useCases: [
-      "앱 화면 초안",
-      "디자인 탐색·발산",
-      "클라이언트 시안",
-    ],
-    thumbnail: img("galileo"),
-    gallery: gal("galileo"),
-    officialUrl: "https://www.usegalileo.ai",
-    addedAt: "2025-07-29",
-  },
-  {
     slug: "uizard",
-    name: "Uizard",
-    tagline: "손그림·텍스트를 목업으로",
+    name: "Uizard by Miro Labs",
+    tagline: "손그림·텍스트를 목업으로 (Miro Labs 합류)",
     description:
-      "손으로 그린 와이어프레임 스케치나 텍스트 설명을 클릭 가능한 목업으로 변환한다. 비전문가도 빠르게 앱·웹 프로토타입을 만들 수 있도록 템플릿과 테마를 제공한다.",
+      "손으로 그린 와이어프레임 스케치나 텍스트 설명을 클릭 가능한 목업으로 변환한다. 비전문가도 빠르게 앱·웹 프로토타입을 만들 수 있도록 템플릿과 테마를 제공한다. Miro에 인수된 뒤 Miro Labs 산하에서 운영되며, Autodesigner 2.0으로 텍스트 프롬프트에서 여러 화면이 이어진 멀티스크린 플로우까지 한 번에 생성한다.",
     categories: ["uiux"],
     pricing: "freemium",
     priceNote: "무료 플랜 제공",
@@ -356,5 +333,6 @@ export const tools: Tool[] = [
   ...imageTools2,
   ...videoTools,
   ...threeDTools,
+  ...uiuxTools,
   ...otherTools,
 ];

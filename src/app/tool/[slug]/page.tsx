@@ -11,6 +11,10 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import { STAGGER } from "@/lib/motion";
 
+// 툴 데이터셋은 고정이므로 목록에 없는 slug(삭제된 galileo-ai 등)는
+// 온디맨드로 렌더하지 않고 곧바로 404를 반환한다.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return tools.map((t) => ({ slug: t.slug }));
 }
