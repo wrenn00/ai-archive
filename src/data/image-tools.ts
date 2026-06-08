@@ -271,7 +271,7 @@ export const imageTools: Tool[] = [
     tagline: "그리면 실시간으로 완성되는 캔버스 + 모델 통합 플랫폼",
     description:
       "스케치나 드로잉을 하면 AI가 실시간으로 정교한 비주얼로 바꿔주는 Realtime Canvas가 핵심인 플랫폼. Flux·Ideogram 등 60종이 넘는 모델을 한곳에서 쓰고 이미지·영상·3D·업스케일까지 아우른다. 말보다 시각으로 사고하는 디자이너·아티스트에게 잘 맞고 무료 티어(하루 100 컴퓨트 유닛)도 있다.",
-    categories: ["image", "video"],
+    categories: ["image"],
     pricing: "freemium",
     priceNote: "무료(하루 100 유닛) / 유료 약 $9·월~ (2026 기준)",
     strengths: ["실시간 캔버스(드로잉→이미지)", "60종+ 모델 한곳에서", "빠른 콘셉트 탐색", "영상·3D·업스케일 통합"],
