@@ -16,13 +16,25 @@ export default function EditorsPicks({ tools }: { tools: Tool[] }) {
             className="group grid grid-cols-1 items-center gap-8 border-t border-border py-12 md:grid-cols-2 md:gap-16 lg:py-16"
           >
             <div className="relative aspect-[16/10] overflow-hidden rounded-[3px] border border-border">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={tool.thumbnail}
-                alt={tool.name}
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-              />
+              {/\.(mp4|webm|mov)$/i.test(tool.thumbnail) ? (
+                <video
+                  src={tool.thumbnail}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay
+                  preload="metadata"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={tool.thumbnail}
+                  alt={tool.name}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                />
+              )}
               <span className="absolute left-4 top-4 bg-accent px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-[#0d0d0c]">
                 Featured
               </span>
