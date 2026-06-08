@@ -25,8 +25,9 @@ export default function AboutPage() {
           모두의 것
         </h1>
         <p className="max-w-2xl font-body text-xl leading-relaxed text-text-dim">
-          좋은 도구를 아는 것만으로도 출발선이 달라집니다. 우리는 그 격차를
-          줄이려고 이 아카이브를 만듭니다.
+          좋은 도구를 아는 것만으로도 출발선이 달라집니다.
+          <br />
+          우리는 그 격차를 줄이려고 이 아카이브를 만듭니다.
         </p>
       </Reveal>
 
