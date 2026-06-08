@@ -6,7 +6,6 @@ export const categoryLabels: Record<Category, string> = {
   "3d": "3D",
   uiux: "UI/UX",
   render: "렌더·업스케일",
-  tips: "팁·가이드",
 };
 
 export const pricingLabels: Record<Pricing, string> = {
@@ -17,7 +16,7 @@ export const pricingLabels: Record<Pricing, string> = {
 
 /** 화면 표기 순서를 가진 카테고리 목록 */
 export const categoryList: { value: Category; label: string }[] = (
-  ["image", "video", "3d", "uiux", "render", "tips"] as Category[]
+  ["image", "video", "3d", "uiux", "render"] as Category[]
 ).map((value) => ({ value, label: categoryLabels[value] }));
 
 /** 가격 정책 목록 */

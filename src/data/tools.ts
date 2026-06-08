@@ -5,7 +5,7 @@ import { threeDTools } from "./3d-tools";
 import { uiuxTools } from "./uiux-tools";
 import { renderTools } from "./render-tools";
 
-export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
+export type Category = "image" | "video" | "3d" | "uiux" | "render";
 export type Pricing = "free" | "freemium" | "paid";
 
 export interface Tool {
@@ -45,7 +45,7 @@ const otherTools: Tool[] = [
     tagline: "완전히 통제 가능한 오픈소스 생성",
     description:
       "로컬에서 돌릴 수 있는 오픈소스 이미지 모델. ControlNet, LoRA, 인페인팅 등 생태계가 방대해 구도·포즈·스타일을 픽셀 단위로 통제할 수 있다. 자유도가 높은 만큼 학습 곡선도 있다.",
-    categories: ["image", "tips"],
+    categories: ["image"],
     pricing: "free",
     priceNote: "오픈소스, 로컬 실행 무료",
     strengths: [
