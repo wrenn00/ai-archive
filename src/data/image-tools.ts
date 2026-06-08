@@ -24,7 +24,7 @@ export const imageTools: Tool[] = [
       "공식 공식: 주제 + 행동 + 배경 순으로 프롬프트를 쓰면 적중률이 올라간다.",
       "사실적인 결과를 원하면 렌즈(35mm 등)·조명·'photorealistic' 같은 트리거를 넣는다.",
     ],
-    thumbnail: "https://picsum.photos/seed/nanobananapro/800/500",
+    thumbnail: "/tools/nano-banana-pro.png",
     gallery: [
       "https://picsum.photos/seed/nbp1/800/600",
       "https://picsum.photos/seed/nbp2/800/600",
