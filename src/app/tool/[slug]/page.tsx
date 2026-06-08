@@ -10,6 +10,7 @@ import ToolCard from "@/components/ToolCard";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import VersionTabs from "@/components/VersionTabs";
+import GalleryMedia from "@/components/GalleryMedia";
 import { STAGGER } from "@/lib/motion";
 
 // 툴 데이터셋은 고정이므로 목록에 없는 slug(삭제된 galileo-ai 등)는
@@ -221,13 +222,7 @@ export default async function ToolPage({
             {tool.gallery.map((src, i) => (
               <Reveal key={src} delay={i * STAGGER}>
                 <div className="aspect-[3/2] overflow-hidden rounded-2xl border border-border bg-surface">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={src}
-                    alt={`${tool.name} 예시 ${i + 1}`}
-                    loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
+                  <GalleryMedia src={src} alt={`${tool.name} 예시 ${i + 1}`} />
                 </div>
               </Reveal>
             ))}
