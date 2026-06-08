@@ -55,7 +55,12 @@ export const uiuxTools: Tool[] = [
     tips: [
       "코드로 UI를 바꿔야 하면 v0 쪽이, 디자인 파일 안에서 다듬는 거라면 Figma Make가 유리하다.",
     ],
-    thumbnail: "https://picsum.photos/seed/figma-make/800/500",
+    thumbnail: "/tools/figma/fm-1.mp4",
+    gallery: [
+      "/tools/figma/fm-1.mp4",
+      "/tools/figma/fm-2.mp4",
+      "/tools/figma/fm-3.mp4",
+    ],
     officialUrl: "https://www.figma.com/make/",
     addedAt: "2026-04-25",
     featured: true,
@@ -78,7 +83,7 @@ export const uiuxTools: Tool[] = [
     tips: [
       "비주얼을 정밀하게 다듬는 용도보다, 작동하는 제품을 빠르게 세우는 데 최적. 디자인 디테일은 별도 도구 병행이 좋다.",
     ],
-    thumbnail: "/tools/lovable/lv-1.avif",
+    thumbnail: "/tools/lovable/scene-1.webm",
     gallery: [
       "/tools/lovable/lv-1.avif",
       "/tools/lovable/lv-2.avif",
