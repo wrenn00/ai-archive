@@ -155,4 +155,27 @@ export const imageTools2: Tool[] = [
     addedAt: "2026-03-01",
     featured: false,
   },
+  {
+    slug: "comfyui",
+    name: "ComfyUI",
+    tagline: "모델·파라미터·출력을 노드로 완전 제어하는 비주얼 AI 워크플로우 엔진",
+    description:
+      "단일 모델을 부르는 도구가 아니라, Stable Diffusion·FLUX 등 여러 모델과 처리 단계를 노드로 연결해 파이프라인을 짜는 오픈소스 워크플로우 엔진. 모든 파라미터와 단계가 보이고 조정 가능해 전문가급 제어가 강점이다. 내 PC에서 도는 Comfy Local(오픈소스), 클라우드(Comfy Cloud), 프로덕션 API(Comfy API), 엔터프라이즈까지 제공하며, 초보자용 App Mode와 커뮤니티 워크플로우(Comfy Hub)도 있다. Netflix·Amazon Studios·Ubisoft 등 실무 스튜디오에서 쓰인다.",
+    categories: ["image"],
+    pricing: "freemium",
+    priceNote: "2026 기준 · Comfy Local 오픈소스(무료) + Comfy Cloud/API 유료",
+    strengths: [
+      "노드 기반 완전 제어 — 모델·파라미터·단계 전부 조정",
+      "60,000+ 노드와 수천 개 커뮤니티 워크플로우",
+      "로컬·클라우드·API·엔터프라이즈 전 범위 지원",
+    ],
+    useCases: ["SD/FLUX 생성 → 업스케일 → 보정을 하나의 워크플로우로 자동화"],
+    tips: [
+      "자유도가 높은 만큼 학습 곡선이 있다. 처음엔 App Mode나 커뮤니티 템플릿에서 시작하는 게 좋다.",
+    ],
+    thumbnail: "/tools/comfyui/cf-1.webm",
+    officialUrl: "https://comfy.org/",
+    addedAt: "2026-05-25",
+    featured: false,
+  },
 ];
