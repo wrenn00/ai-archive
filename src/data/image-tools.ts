@@ -206,7 +206,7 @@ export const imageTools: Tool[] = [
     tagline: "게임·콘셉트 아트와 일관된 캐릭터에 강한 플랫폼",
     description:
       "직관적인 웹 UI와 강한 이미지 통제력으로 게임 개발자·콘셉트 아티스트에게 인기 있는 플랫폼. 커스텀 모델 학습, 일관된 캐릭터, 3D 텍스처 도구를 제공하고, 그리면서 실시간으로 결과가 갱신되는 Realtime Canvas가 특징. 무료 티어(하루 150토큰)가 넉넉하다.",
-    categories: ["image", "3d"],
+    categories: ["image"],
     pricing: "freemium",
     priceNote: "무료(하루 150토큰) / 유료 $12 ~ $60·월 (2026 기준)",
     strengths: ["일관된 캐릭터·스타일", "커스텀 모델 학습", "3D 텍스처·게임 에셋", "Realtime Canvas"],
