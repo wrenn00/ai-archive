@@ -188,7 +188,7 @@ export const threeDTools: Tool[] = [
     tips: [
       "무료 플랜으로 품질을 먼저 보고, 대량 생성·고급 리메싱이 필요하면 유료로. 산업용 정밀도(CAD·디지털 트윈) 쪽으로도 확장 중이다.",
     ],
-    thumbnail: "https://picsum.photos/seed/varco-3d/800/500",
+    thumbnail: "/tools/varco/vc-1.png",
     officialUrl: "https://3d.varco.ai/",
     addedAt: "2025-12-01",
     featured: false,
