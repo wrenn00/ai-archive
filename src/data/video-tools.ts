@@ -243,4 +243,28 @@ export const videoTools: Tool[] = [
     addedAt: "2026-03-01",
     featured: false,
   },
+  {
+    slug: "vidu",
+    name: "Vidu",
+    tagline: "캐릭터 일관성과 낮은 단가가 강점인 Shengshu의 영상 모델",
+    description:
+      "중국 Shengshu Technology(칭화대 연구진 창업, Baidu·Ant 투자)가 만든 영상 모델. 텍스트·이미지에서 최대 1080p 영상을 약 10초 만에 생성한다. 현재 Vidu Q3는 참조 입력 기반(Reference-to-Video)으로 컷이 바뀌어도 캐릭터를 유지하는 일관성에 강하고 단가가 가장 낮은 축이다. 3~7장의 참조 이미지로 인물·사물·장면 일관성을 지키는 Multi-Entity Consistency, Q2의 듀얼 렌더링(Turbo/Cinematic)·시작·끝 프레임 연속도 지원한다. 애니메이션 스타일에 특히 강하다.",
+    categories: ["video"],
+    pricing: "freemium",
+    priceNote:
+      "2026 기준 · 무료(크레딧 80) + Standard/Pro(Cinema 화질·최대 32초) · API 약 $0.042/초~",
+    strengths: [
+      "참조 기반 멀티 엔티티 — 컷 간 캐릭터 일관성",
+      "초당 약 $0.042~로 매우 낮은 단가",
+      "애니메이션/스타일라이즈드 영상에 강함",
+    ],
+    useCases: ["캐릭터 참조 이미지로 여러 컷에서 같은 인물을 유지하는 시퀀스 생성"],
+    tips: [
+      "프리뷰는 Turbo, 최종은 Cinematic으로. 최상위 화질은 Veo/Kling에 못 미치니 '일관성·비용'이 중요한 작업에 적합하다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/vidu/800/500",
+    officialUrl: "https://www.vidu.com/",
+    addedAt: "2026-04-02",
+    featured: false,
+  },
 ];
