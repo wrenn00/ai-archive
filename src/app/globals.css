@@ -19,13 +19,13 @@
   --font-body: var(--font-hanken), "Pretendard", system-ui, sans-serif;
 }
 
-/* ---- Design tokens (라이트 단일 테마) ---- */
+/* ---- Design tokens (라이트 단일 테마, 차가운 중립 니어화이트) ---- */
 :root {
-  --bg: #f4f2ec;
+  --bg: #f4f5f6;
   --surface: #ffffff;
   --text: #0e0e0e;
-  --text-dim: #5a5852;
-  --border: #dad7cc;
+  --text-dim: #6b6b70;
+  --border: #e4e4e6;
   --accent: #c7ff3a;
 }
 
