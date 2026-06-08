@@ -284,7 +284,15 @@ export const videoTools: Tool[] = [
     tips: [
       "'완성 영상'이 아니라 '시도'에 과금되는 구조라 보통 클립당 2~5번 반복이 필요하다. 무료는 워터마크가 붙으니 공개용은 유료가 필요.",
     ],
-    thumbnail: "https://picsum.photos/seed/pixverse/800/500",
+    thumbnail: "/tools/pixverse/pv-1.mp4",
+    gallery: [
+      "/tools/pixverse/pv-1.mp4",
+      "/tools/pixverse/pv-2.mp4",
+      "/tools/pixverse/pv-3.mp4",
+      "/tools/pixverse/pv-4.mp4",
+      "/tools/pixverse/pv-5.mp4",
+      "/tools/pixverse/pv-6.mp4",
+    ],
     officialUrl: "https://pixverse.ai/",
     addedAt: "2026-05-20",
     featured: false,
