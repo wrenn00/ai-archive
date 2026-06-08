@@ -116,8 +116,12 @@ const otherTools: Tool[] = [
     tips: [
       "정지 이미지를 먼저 확정한 뒤 image-to-video로 가면 통제가 쉽다.",
     ],
-    thumbnail: img("runway"),
-    gallery: gal("runway"),
+    thumbnail: "/tools/runway/rw-1.mp4",
+    gallery: [
+      "/tools/runway/rw-1.mp4",
+      "/tools/runway/rw-2.mp4",
+      "/tools/runway/rw-3.mp4",
+    ],
     officialUrl: "https://runwayml.com",
     addedAt: "2025-11-01",
     featured: true,
