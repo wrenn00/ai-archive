@@ -18,7 +18,7 @@ export default function AboutCTA() {
           한곳에 모아 누구에게나 공개합니다.
         </p>
 
-        <p className="max-w-xl font-body text-sm leading-relaxed text-text-dim">
+        <p className="font-body text-sm leading-relaxed text-text-dim md:whitespace-nowrap">
           각 툴의 강점과 활용 사례, 실전 팁까지 정리해 비교할 수 있도록 돕습니다.
           정보는 모두의 것이어야 하니까요.
         </p>
