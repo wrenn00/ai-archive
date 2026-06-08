@@ -77,7 +77,7 @@ export const imageTools2: Tool[] = [
       "이미지에서 바로 영상으로 이어지는 워크플로에 강하다.",
       "정지 컷을 먼저 다듬은 뒤 영상으로 확장하면 결과가 안정적이다.",
     ],
-    thumbnail: "/tools/grok/g-thumb.mp4",
+    thumbnail: "/tools/grok/g-vid-5.mp4",
     gallery: [
       "/tools/grok/g-vid-1.mp4",
       "/tools/grok/g-vid-2.mp4",
