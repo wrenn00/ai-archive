@@ -215,7 +215,7 @@ export const imageTools: Tool[] = [
       "스타일을 일정하게 유지해 '대량'으로 뽑을 때 가장 빛난다.",
       "단발 히어로 이미지 품질만 보면 미드저니가 앞서니 용도에 맞게 선택한다.",
     ],
-    thumbnail: "/tools/leonardo/ln-1.jpg",
+    thumbnail: "/tools/leonardo/ln-thumb.mp4",
     gallery: [
       "/tools/leonardo/ln-1.jpg",
       "/tools/leonardo/ln-2.jpeg",
