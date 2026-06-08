@@ -276,7 +276,15 @@ export const videoTools: Tool[] = [
     tips: [
       "프리뷰는 Turbo, 최종은 Cinematic으로. 최상위 화질은 Veo/Kling에 못 미치니 '일관성·비용'이 중요한 작업에 적합하다.",
     ],
-    thumbnail: "https://picsum.photos/seed/vidu/800/500",
+    thumbnail: "/tools/vidu/vd-1.mp4",
+    gallery: [
+      "/tools/vidu/vd-1.mp4",
+      "/tools/vidu/vd-2.mp4",
+      "/tools/vidu/vd-3.mp4",
+      "/tools/vidu/vd-4.mp4",
+      "/tools/vidu/vd-5.mp4",
+      "/tools/vidu/vd-1.mp4",
+    ],
     officialUrl: "https://www.vidu.com/",
     addedAt: "2026-04-02",
     featured: false,
