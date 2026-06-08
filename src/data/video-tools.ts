@@ -188,7 +188,15 @@ export const videoTools: Tool[] = [
     tips: [
       "외부 API를 못 쓰는 보안 환경이면 자체 호스팅 가능한 오픈 모델이 현실적 선택지.",
     ],
-    thumbnail: "https://picsum.photos/seed/ltx-2/800/500",
+    thumbnail: "/tools/ltx/lt-1.mp4",
+    gallery: [
+      "/tools/ltx/lt-1.mp4",
+      "/tools/ltx/lt-2.mp4",
+      "/tools/ltx/lt-3.mp4",
+      "/tools/ltx/lt-4.mp4",
+      "/tools/ltx/lt-5.mp4",
+      "/tools/ltx/lt-6.webm",
+    ],
     officialUrl: "https://www.lightricks.com/ltxv",
     addedAt: "2026-03-12",
     featured: false,
