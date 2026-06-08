@@ -32,7 +32,13 @@ export const videoTools: Tool[] = [
     tips: [
       "초안은 Fast/Lite로 빠르게 돌리고 최종만 Standard로 렌더하면 비용이 크게 절약된다.",
     ],
-    thumbnail: "https://picsum.photos/seed/google-veo-3-1/800/500",
+    thumbnail: "/tools/veo/ve-1.mp4",
+    gallery: [
+      "/tools/veo/ve-1.mp4",
+      "/tools/veo/ve-2.mp4",
+      "/tools/veo/ve-3.mp4",
+      "/tools/veo/ve-4.mp4",
+    ],
     officialUrl: "https://deepmind.google/technologies/veo/",
     addedAt: "2026-05-22",
     featured: true,
