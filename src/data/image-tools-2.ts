@@ -11,11 +11,11 @@ import type { Tool } from "./tools";
 
 export const imageTools2: Tool[] = [
   {
-    slug: "seedream-5",
-    name: "Seedream 5.0",
-    tagline: "웹 검색과 추론을 갖춘 바이트댄스의 지능형 이미지 모델",
+    slug: "seedream",
+    name: "Seedream",
+    tagline: "웹 검색·추론을 갖춘 바이트댄스의 지능형 이미지 모델 — 5.0·Lite 서빙",
     description:
-      "틱톡 모회사 바이트댄스의 Seed 팀이 만든 텍스트·이미지 생성 모델. 이미지 모델 최초로 실시간 웹 검색을 탑재해 오늘의 날씨나 트렌드 같은 '현재 정보'를 반영한 이미지를 만들 수 있고, 복잡한 프롬프트를 '생각'해서 레이아웃·텍스트·공간 관계를 정확히 처리한다. 고해상도 이미지를 30초 안에 뽑을 만큼 빠른 것도 강점이다.",
+      "틱톡 모회사 바이트댄스의 Seed 팀이 만든 텍스트·이미지 생성 모델 라인. 이미지 모델 최초로 실시간 웹 검색을 탑재해 오늘의 날씨나 트렌드 같은 '현재 정보'를 반영한 이미지를 만들 수 있고, 복잡한 프롬프트를 '생각'해서 레이아웃·텍스트·공간 관계를 정확히 처리한다. 현재는 플래그십 5.0과 무료 경량 Lite를 함께 서빙한다.",
     categories: ["image"],
     pricing: "freemium",
     priceNote: "Lite 버전 무료 제공 / 플랫폼별 크레딧 (2026 기준)",
@@ -25,29 +25,27 @@ export const imageTools2: Tool[] = [
       "현재 이슈나 데이터 기반 이미지가 필요할 때 웹 검색 기능이 빛난다.",
       "여러 장 빠르게 뽑으며 비교하는 작업에 속도 이점이 크다.",
     ],
+    versions: [
+      {
+        name: "5.0",
+        tagline: "웹 검색·추론을 갖춘 최신 플래그십",
+        description:
+          "실시간 웹 검색과 추론을 갖춘 최신 메인 버전. 복잡한 레이아웃·텍스트·공간 관계를 정확히 처리하고 고해상도 이미지를 30초 안에 뽑을 만큼 빠르다.",
+        pricing: "freemium",
+        current: true,
+      },
+      {
+        name: "5.0 Lite",
+        tagline: "무료로 쓰는 경량 버전",
+        description:
+          "핵심 생성 기능을 가볍게 제공하는 무료 버전. 비용 없이 빠른 시도·반복에 적합하다.",
+        pricing: "free",
+        current: true,
+      },
+    ],
     thumbnail: "https://picsum.photos/seed/seedream5/800/500",
     officialUrl: "https://seed.bytedance.com/",
     addedAt: "2026-02-15",
-    featured: false,
-  },
-  {
-    slug: "nano-banana-2",
-    name: "Nano Banana 2",
-    tagline: "Pro급 품질을 Flash 속도로 — 구글의 대중형 모델",
-    description:
-      "구글 딥마인드의 Gemini 3.1 Flash Image 모델. 상위 모델 Nano Banana Pro의 고품질과 Flash의 빠른 속도를 합쳐, 비싼 구독 없이도 누구나 빠르게 쓸 수 있게 했다. 제미나이 앱·검색·광고 등 구글 생태계 전반에서 기본 모델로 쓰이며, 512px부터 4K까지 다양한 해상도를 지원한다.",
-    categories: ["image"],
-    pricing: "freemium",
-    priceNote: "제미나이 무료 기본 모델 / 고급 기능 유료 (2026 기준)",
-    strengths: ["Pro급 품질 + 빠른 속도", "이미지 편집·인페인팅", "최대 4K 해상도", "구글 생태계 통합"],
-    useCases: ["빠른 이미지 생성·반복", "기존 이미지 편집", "소셜·마케팅 비주얼", "일상적 빠른 작업"],
-    tips: [
-      "속도가 필요한 대부분의 일상 작업에 기본값으로 두기 좋다.",
-      "더 정밀한 작업이 필요하면 같은 계열의 Nano Banana Pro로 올려 쓴다.",
-    ],
-    thumbnail: "https://picsum.photos/seed/nanobanana2/800/500",
-    officialUrl: "https://gemini.google.com/",
-    addedAt: "2026-02-26",
     featured: false,
   },
   {

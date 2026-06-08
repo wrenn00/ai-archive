@@ -10,24 +10,51 @@ import type { Tool } from "./tools";
 
 export const imageTools: Tool[] = [
   {
-    slug: "nano-banana-pro",
-    name: "Nano Banana Pro",
-    tagline: "구글 제미나이 기반, 텍스트·사실성 최상위 모델",
+    slug: "nano-banana",
+    name: "Nano Banana",
+    tagline: "구글 제미나이 기반 이미지 모델 — Pro·2(Flash) 두 버전 서빙",
     description:
-      "구글 Gemini 3 Pro로 만든 이미지 생성·편집 모델. 장면을 '생각'하고 그리는 방식이라 프롬프트를 정확히 따르고, 다국어 텍스트 렌더링(한국어 포함)과 4K 출력, 인물 일관성에서 현재 최상위로 평가받는다. 기본 생성은 제미나이 무료 티어로 가능하고, Pro 기능은 유료 구독에서 풀린다.",
+      "구글 딥마인드의 이미지 생성·편집 모델 라인. 장면을 '생각'하고 그리는 방식이라 프롬프트를 정확히 따르고, 다국어 텍스트 렌더링(한국어 포함)·4K 출력·인물 일관성에서 최상위로 평가받는다. 최고 품질의 Pro와, Pro급 품질을 Flash 속도로 끌어올린 대중형 2(Flash)를 함께 운영한다.",
     categories: ["image"],
     pricing: "freemium",
-    priceNote: "기본 무료 / 풀 기능 Google One AI 약 $19.99·월 (2026 기준)",
-    strengths: ["정확한 텍스트 렌더링", "한국어 등 다국어 지원", "4K 고해상도", "인물·캐릭터 일관성"],
+    priceNote: "기본 무료(제미나이) / 풀 기능 Google One AI 약 $19.99·월 (2026 기준)",
+    strengths: ["정확한 텍스트·다국어 렌더링(한국어)", "4K 고해상도", "인물·캐릭터 일관성", "용도별 Pro/Flash 버전 선택"],
     useCases: ["문구가 들어간 포스터·썸네일", "사실적인 제품 이미지", "인포그래픽", "캐릭터 시리즈"],
     tips: [
-      "공식 공식: 주제 + 행동 + 배경 순으로 프롬프트를 쓰면 적중률이 올라간다.",
-      "사실적인 결과를 원하면 렌즈(35mm 등)·조명·'photorealistic' 같은 트리거를 넣는다.",
+      "주제 + 행동 + 배경 순으로 프롬프트를 쓰면 적중률이 올라간다.",
+      "정밀·고품질은 Pro, 빠른 일상 작업은 2(Flash)로 나눠 쓴다.",
     ],
-    thumbnail: "/tools/nano-banana-pro.png",
+    versions: [
+      {
+        name: "Pro",
+        tagline: "텍스트·사실성 최상위 (Gemini 3 Pro)",
+        description:
+          "구글 Gemini 3 Pro로 만든 최고 품질 버전. 프롬프트를 정확히 따르고 다국어 텍스트 렌더링·4K 출력·인물 일관성에서 현재 최상위로 평가받는다. 풀 기능은 유료 구독에서 풀린다.",
+        pricing: "freemium",
+        current: true,
+      },
+      {
+        name: "2 (Flash)",
+        tagline: "Pro급 품질을 Flash 속도로 — 대중형 기본 모델",
+        description:
+          "Gemini 3.1 Flash Image 모델. Pro의 고품질과 Flash의 빠른 속도를 합쳐 비싼 구독 없이 누구나 빠르게 쓸 수 있다. 제미나이 앱·검색·광고 등 구글 생태계 전반의 기본 모델이며 512px~4K 해상도를 지원한다.",
+        pricing: "freemium",
+        current: true,
+      },
+    ],
+    thumbnail: "/tools/nanobanana/nb-11.png",
     gallery: [
-      "https://picsum.photos/seed/nbp1/800/600",
-      "https://picsum.photos/seed/nbp2/800/600",
+      "/tools/nanobanana/nb-1.png",
+      "/tools/nanobanana/nb-2.png",
+      "/tools/nanobanana/nb-3.png",
+      "/tools/nanobanana/nb-4.png",
+      "/tools/nanobanana/nb-5.webp",
+      "/tools/nanobanana/nb-6.webp",
+      "/tools/nanobanana/nb-7.webp",
+      "/tools/nanobanana/nb-8.jpg",
+      "/tools/nanobanana/nb-9.webp",
+      "/tools/nanobanana/nb-10.jpg",
+      "/tools/nanobanana/nb-11.png",
     ],
     officialUrl: "https://gemini.google.com/",
     addedAt: "2026-05-20",

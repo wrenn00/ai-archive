@@ -8,6 +8,18 @@ import { renderTools } from "./render-tools";
 export type Category = "image" | "video" | "3d" | "uiux" | "render";
 export type Pricing = "free" | "freemium" | "paid";
 
+export interface ToolVersion {
+  /** 짧은 버전 이름, 예: "Pro", "2 (Flash)", "5.0" */
+  name: string;
+  /** 한 줄 설명 */
+  tagline: string;
+  /** 버전 상세 설명 */
+  description: string;
+  pricing?: Pricing;
+  /** 현재 서빙 중인 버전인지 */
+  current?: boolean;
+}
+
 export interface Tool {
   slug: string;
   name: string;
@@ -25,6 +37,8 @@ export interface Tool {
   /** ISO date (YYYY-MM-DD) */
   addedAt: string;
   featured?: boolean;
+  /** 같은 모델 계열의 버전들 (있으면 상세 페이지에서 버전 탭으로 표시) */
+  versions?: ToolVersion[];
 }
 
 const img = (seed: string) =>

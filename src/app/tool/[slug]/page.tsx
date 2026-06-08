@@ -9,6 +9,7 @@ import PriceBadge from "@/components/PriceBadge";
 import ToolCard from "@/components/ToolCard";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import VersionTabs from "@/components/VersionTabs";
 import { STAGGER } from "@/lib/motion";
 
 // 툴 데이터셋은 고정이므로 목록에 없는 slug(삭제된 galileo-ai 등)는
@@ -100,6 +101,13 @@ export default async function ToolPage({
           />
         </div>
       </Reveal>
+
+      {/* 버전 (있을 때만) — 한 모델의 여러 버전을 탭으로 */}
+      {tool.versions && tool.versions.length > 0 && (
+        <Reveal className="mt-16">
+          <VersionTabs versions={tool.versions} />
+        </Reveal>
+      )}
 
       {/* 3. 본문 2단 */}
       <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-[1.6fr_1fr]">
