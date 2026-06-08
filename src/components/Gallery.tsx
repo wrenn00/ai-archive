@@ -6,7 +6,7 @@ import GalleryMedia from "@/components/GalleryMedia";
 import Reveal from "@/components/Reveal";
 import { DUR, EASE, STAGGER } from "@/lib/motion";
 
-const isVideo = (s: string) => /\.(mp4|webm)$/i.test(s);
+const isVideo = (s: string) => /\.(mp4|webm|mov)$/i.test(s);
 
 /**
  * 결과물 갤러리 — 그리드 + 클릭 시 크게 보는 라이트박스.

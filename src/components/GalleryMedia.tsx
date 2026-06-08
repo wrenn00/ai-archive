@@ -15,7 +15,7 @@ export default function GalleryMedia({
   alt: string;
 }) {
   const reduce = useReducedMotion();
-  const isVideo = /\.(mp4|webm)$/i.test(src);
+  const isVideo = /\.(mp4|webm|mov)$/i.test(src);
 
   if (isVideo) {
     return (

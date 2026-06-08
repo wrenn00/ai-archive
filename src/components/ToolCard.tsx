@@ -43,7 +43,7 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
             featured ? "border-text-dim/40" : "border-border",
           )}
         >
-          {/\.(mp4|webm)$/i.test(thumbnail) ? (
+          {/\.(mp4|webm|mov)$/i.test(thumbnail) ? (
             <video
               src={thumbnail}
               muted
