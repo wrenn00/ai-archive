@@ -91,15 +91,10 @@ export default async function ToolPage({
         </div>
       </Reveal>
 
-      {/* 2. 대표 이미지 */}
+      {/* 2. 대표 이미지/영상 */}
       <Reveal className="mt-12">
         <div className="aspect-video overflow-hidden rounded-3xl border border-border bg-surface">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={tool.thumbnail}
-            alt={tool.name}
-            className="h-full w-full object-cover"
-          />
+          <GalleryMedia src={tool.thumbnail} alt={tool.name} />
         </div>
       </Reveal>
 

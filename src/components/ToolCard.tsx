@@ -43,13 +43,26 @@ export default function ToolCard({ tool, index = 0 }: ToolCardProps) {
             featured ? "border-text-dim/40" : "border-border",
           )}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={thumbnail}
-            alt={name}
-            loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-          />
+          {/\.(mp4|webm)$/i.test(thumbnail) ? (
+            <video
+              src={thumbnail}
+              muted
+              loop
+              playsInline
+              autoPlay={!reduce}
+              preload="metadata"
+              aria-label={name}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={thumbnail}
+              alt={name}
+              loading="lazy"
+              className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            />
+          )}
 
           {/* Hover overlay — 절제된 모노톤 */}
           <div className="absolute inset-0 flex items-end p-4 opacity-0 transition-opacity duration-500 group-hover:bg-bg/10 group-hover:opacity-100">
