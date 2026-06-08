@@ -18,6 +18,7 @@ export default function Home() {
   // 카테고리별 프리뷰 대표 도구(없으면 해당 카테고리 첫 도구)
   const PREVIEW_SLUG: Partial<Record<string, string>> = {
     "3d": "stability-sf3d",
+    uiux: "framer",
   };
 
   const categoryItems: CategoryNavItem[] = categoryList.map(
