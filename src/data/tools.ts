@@ -1,6 +1,7 @@
 import { imageTools } from "./image-tools";
 import { imageTools2 } from "./image-tools-2";
 import { videoTools } from "./video-tools";
+import { threeDTools } from "./3d-tools";
 
 export type Category = "image" | "video" | "3d" | "uiux" | "render" | "tips";
 export type Pricing = "free" | "freemium" | "paid";
@@ -354,5 +355,6 @@ export const tools: Tool[] = [
   ...imageTools,
   ...imageTools2,
   ...videoTools,
+  ...threeDTools,
   ...otherTools,
 ];
