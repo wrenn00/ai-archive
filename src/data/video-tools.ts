@@ -122,7 +122,15 @@ export const videoTools: Tool[] = [
     tips: [
       "고품질 컷은 Pro 엔드포인트, 빠른 초안은 표준 엔드포인트로 나눠 쓰면 효율적.",
     ],
-    thumbnail: "https://picsum.photos/seed/minimax-hailuo-2-3/800/500",
+    thumbnail: "/tools/hailuo/hl-1.mp4",
+    gallery: [
+      "/tools/hailuo/hl-1.mp4",
+      "/tools/hailuo/hl-2.mp4",
+      "/tools/hailuo/hl-3.mp4",
+      "/tools/hailuo/hl-4.mp4",
+      "/tools/hailuo/hl-5.mp4",
+      "/tools/hailuo/hl-6.mp4",
+    ],
     officialUrl: "https://hailuoai.video/",
     addedAt: "2026-03-20",
     featured: false,
