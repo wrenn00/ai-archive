@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Hanken_Grotesk } from "next/font/google";
+import { Fraunces, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Header from "@/components/Header";
@@ -7,12 +7,15 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import PageTransition from "@/components/PageTransition";
 
-const bricolage = Bricolage_Grotesque({
-  variable: "--font-bricolage",
+// 디스플레이: Fraunces (가변, opsz 옵티컬 사이즈 축 포함)
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
+  axes: ["opsz"],
   display: "swap",
 });
 
+// 본문·UI: Hanken Grotesk
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
   subsets: ["latin"],
@@ -32,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${bricolage.variable} ${hanken.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${hanken.variable} h-full antialiased`}
     >
       <head>
         <link

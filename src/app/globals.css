@@ -12,11 +12,14 @@
   --color-accent: var(--accent);
 }
 
-/* Fonts: plain @theme so --font-display / --font-body are exposed on :root
-   and generate the `font-display` / `font-body` utilities. */
+/* Fonts: plain @theme so --font-display / --font-body 가 :root 에 노출되고
+   `font-display` / `font-body` 유틸을 생성한다.
+   - 디스플레이/헤드라인: Fraunces(에디토리얼 세리프, opsz 가변)
+   - 본문·UI·라벨: Hanken Grotesk
+   - 한글은 두 폰트 모두 Pretendard 로 폴백(영문 세리프 + 한글 산세리프 페어링) */
 @theme {
-  --font-display: var(--font-bricolage);
-  --font-body: var(--font-hanken), "Pretendard", system-ui, sans-serif;
+  --font-display: var(--font-fraunces), "Pretendard", serif;
+  --font-body: var(--font-hanken), "Pretendard", sans-serif;
 }
 
 /* ---- Design tokens (라이트 단일 테마, 차가운 중립 니어화이트) ---- */
@@ -33,8 +36,25 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
+  line-height: 1.6; /* 본문 읽기 편하게 */
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* 모든 헤딩은 디스플레이(Fraunces) + 에디토리얼 자간/행간.
+   컴포넌트의 tracking-*/leading-* 유틸이 있으면 그쪽이 우선한다. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-optical-sizing: auto;
+}
+
+/* mono 라벨·카운트의 숫자를 고정폭으로 정렬 */
+.font-mono {
+  font-variant-numeric: tabular-nums;
 }
 
 ::selection {
