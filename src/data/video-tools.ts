@@ -49,7 +49,7 @@ export const videoTools: Tool[] = [
     tagline: "텍스트·이미지·오디오·영상을 모두 입력받는 바이트댄스 멀티모달 모델",
     description:
       "바이트댄스 Seed 팀의 플래그십 영상 모델(2026년 2월 공개). 단일 멀티모달 아키텍처로 구성·모션·카메라 설계·오디오를 한 번에 생성한다. 최대 15초 안에서 컷이 나뉜 멀티샷을 만들어 편집된 시퀀스처럼 보이게 하고, 동기화된 스테레오 오디오·비트 싱크·역할 기반 에셋 태깅·참조 기반 모션 제어를 지원한다. Artificial Analysis 아레나에서 이미지→영상 부문 최상위권.",
-    categories: ["video", "image"],
+    categories: ["video"],
     pricing: "paid",
     priceNote:
       "2026 기준 · fal·getimg·invideo 등 서드파티 API/플랫폼을 통해 사용(사용량 과금)",

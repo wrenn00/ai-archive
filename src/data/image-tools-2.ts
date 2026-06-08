@@ -155,4 +155,29 @@ export const imageTools2: Tool[] = [
     addedAt: "2026-03-01",
     featured: false,
   },
+  {
+    slug: "seedance-2-0-image",
+    name: "Seedance 2.0",
+    tagline: "참조 기반 정밀 제어가 강한 바이트댄스의 이미지 생성",
+    description:
+      "바이트댄스 Seed 팀의 멀티모달 모델 중 이미지 생성 부분. 텍스트와 참조 이미지를 함께 입력받아 구성·스타일을 정밀하게 제어하고, 역할 기반 에셋 태깅으로 인물·사물·배경을 일관되게 유지한다. 영상(Seedance 2.0)으로 바로 이어지는 워크플로를 전제로 설계돼, 같은 톤의 정지 컷을 먼저 잡고 영상으로 확장하는 작업에 잘 맞는다.",
+    categories: ["image"],
+    pricing: "paid",
+    priceNote:
+      "2026 기준 · fal·getimg·invideo 등 서드파티 API/플랫폼을 통해 사용(사용량 과금)",
+    strengths: [
+      "참조 이미지 기반의 강한 구성·스타일 제어",
+      "역할 태깅으로 인물·사물·배경 일관성 유지",
+      "영상(Seedance 2.0)으로 이어지는 매끄러운 워크플로",
+    ],
+    useCases: ["영상 제작 전, 같은 톤의 키 비주얼·정지 컷을 먼저 생성"],
+    tips: [
+      "정지 컷을 먼저 다듬은 뒤 같은 참조로 영상까지 확장하면 톤이 일관된다.",
+      "상업 사용 시 약관·지역 롤아웃 상태를 확인한다.",
+    ],
+    thumbnail: "https://picsum.photos/seed/seedance-2-0-image/800/500",
+    officialUrl: "https://seed.bytedance.com/en/seedance2_0",
+    addedAt: "2026-02-20",
+    featured: false,
+  },
 ];
