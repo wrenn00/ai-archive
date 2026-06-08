@@ -172,7 +172,8 @@ export const uiuxTools: Tool[] = [
     tips: [
       "무료 티어 외 에디터 추가 시 비용($40/월·에디터 수준)이 붙으니 팀 규모를 고려.",
     ],
-    thumbnail: "https://picsum.photos/seed/framer/800/500",
+    thumbnail: "/tools/framer/fr-1.mp4",
+    gallery: ["/tools/framer/fr-1.mp4", "/tools/framer/fr-2.mp4"],
     officialUrl: "https://www.framer.com/",
     addedAt: "2026-02-15",
     featured: false,
