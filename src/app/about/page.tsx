@@ -121,7 +121,8 @@ export default function AboutPage() {
           className="max-w-3xl font-display font-bold leading-tight tracking-tight text-text"
           style={{ fontSize: "clamp(28px, 4.5vw, 64px)" }}
         >
-          이제, 같은 출발선에서 시작하세요.
+          이제, 같은<br />
+          출발선에서 시작하세요.
         </p>
         <Link
           href="/archive"
