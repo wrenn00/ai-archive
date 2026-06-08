@@ -63,10 +63,12 @@ export default function AboutPage() {
           </span>
           <div className="flex flex-col gap-6">
             <p
-              className="font-display font-bold leading-tight tracking-tight text-text"
+              className="font-display font-bold leading-tight tracking-tight text-text break-keep"
               style={{ fontSize: "clamp(24px, 3.5vw, 44px)" }}
             >
-              그래서 우리는 흩어진 정보를 한곳에 모읍니다.
+              그래서 우리는
+              <br />
+              흩어진 정보를 한곳에 모읍니다.
             </p>
             <p className="max-w-2xl font-body text-lg leading-relaxed text-text-dim">
               새로운 AI 디자인 툴은 매주 쏟아지지만, 정작 필요한 정보는 여러
