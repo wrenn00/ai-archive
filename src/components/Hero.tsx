@@ -9,7 +9,8 @@ export default function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="relative flex min-h-[90vh] flex-col justify-center px-6 sm:px-12 lg:px-20">
+    <section className="relative flex min-h-[90vh] flex-col">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 sm:px-12 lg:px-20">
       <motion.span
         className="mb-8 font-mono text-xs uppercase tracking-[0.3em] text-text-dim"
         initial={reduce ? false : { opacity: 0 }}
@@ -71,6 +72,7 @@ export default function Hero() {
           )}
         </span>
       </motion.div>
+      </div>
     </section>
   );
 }
